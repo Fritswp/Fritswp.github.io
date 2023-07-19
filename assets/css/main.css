@@ -2189,7 +2189,7 @@ input, select, textarea {
   }
   
   /* If your existing button class is .existing-button, replace 'button' with '.existing-button' */
-  .existing-button {
+  .custom-button {
 	margin-left: 10px;
 	padding: 12px 24px; /* Updated padding to match the existing button's padding */
 	font-size: 16px;
