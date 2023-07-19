@@ -2154,72 +2154,80 @@ input, select, textarea {
 				right: 0;
 			}
 
+
 /* Main */
 #main {
-	position: relative;
-	overflow: hidden;
-	background: #f8f8f8; /* Changed background color to a lighter shade */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #f8f8f8;
 	padding: 2em;
-	border-radius: 10px; /* Added border-radius for a rounded look */
+	border-radius: 10px;
   }
   
-  /* Customize the input box and button */
   .input-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap; /* Allow the button to wrap to the next line if needed */
+	max-width: 400px; /* Limit the width of the input container */
 	margin-top: 2em;
   }
   
   #question-input {
 	flex: 1;
-	padding: 15px;
+	padding: 10px; /* Added padding on all sides to create some space */
+	margin-right: 10px; /* Added margin to the right of the input for spacing */
 	font-size: 16px;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	box-shadow: none;
+	min-width: 200px; /* Minimum width for the input */
   }
   
-  #button {
+  /* If you have an existing class for the button, use that class here */
+  /* For example, if your button class is .custom-button, replace 'button' with '.custom-button' */
+  .custom-button {
 	margin-left: 10px;
-	padding: 12px 24px; /* Adjusted padding for a more balanced button */
+	padding: 12px 24px;
 	font-size: 16px;
 	border: none;
 	border-radius: 8px;
 	background-color: #007bff;
 	color: #fff;
 	cursor: pointer;
-	transition: background-color 0.3s ease; /* Added a smooth transition on hover */
+	transition: background-color 0.3s ease;
   }
   
-  #button:hover {
-	background-color: #0056b3; /* Darker shade on hover */
+  .custom-button:hover {
+	background-color: #0056b3;
   }
   
   /* Chat-like display */
-  #chat-container {
+  .chat-container {
 	max-height: 400px;
 	overflow-y: auto;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	padding: 10px;
-	margin-top: 20px; /* Adjusted margin for separation from the input section */
+	margin-top: 20px;
   }
   
-  #chat-container p {
+  .chat-container p {
 	margin: 5px 0;
-	padding: 5px 8px; /* Added padding for a bit of spacing between chat messages */
+	padding: 5px 8px;
   }
   
-  #user-question {
+  .user-question {
 	text-align: right;
   }
   
-  #bot-answer {
+  .bot-answer {
 	text-align: left;
 	font-weight: bold;
   }
-  
 
 /* Content */
 
