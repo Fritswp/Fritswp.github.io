@@ -2161,10 +2161,10 @@ input, select, textarea {
 }
 
 #question-form button.form-button-submit {
-	margin-top: 0em; /* Adjust the value to your preference */
+	margin-top: 20px; /* Adjust the value to your preference */
 }
 #answer-section {
-	margin-bottom: 2em; /* Adjust the value to your preference */
+	margin-bottom: 20px; /* Adjust the value to your preference */
 }
 
 
