@@ -2161,7 +2161,7 @@ input, select, textarea {
 	overflow: hidden;
 	background: #fff;
 	text-align: center;
-	padding: 6em ;
+	padding: 6em 0 6em 0;
 }
 
 	#features p {
