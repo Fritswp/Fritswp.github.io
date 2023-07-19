@@ -139,7 +139,6 @@
 					</div>
 				</div>
 	
-	
 				<!-- Answer Section -->
 				<div class="row">
 					<div class="col-12">
@@ -245,12 +244,13 @@
 				var userQuestion = $('#user-question').val();
 
 				// Here, you can process the user's question using an API or your own logic.
-				// For simplicity, let's just display a dummy response.
-				var dummyResponse = "Sorry, I currently do not have the answer to your question.";
+				// For simplicity, let's just display a dummy answer.
+				var answer = "This is a dummy answer to '" + userQuestion + "'";
 
-				// Clear the user's question and display the dummy response
+				// Clear the user's question and display the answer
 				$('#user-question').val('');
-				$('#answer-section').html('<p><strong>Answer: </strong>' + dummyResponse + '</p>');
+				$('#answer-section').html('<p><strong>Your Question: </strong>' + userQuestion + '</p>' +
+					'<p><strong>Answer: </strong>' + answer + '</p>');
 			});
 		});
 	</script>
