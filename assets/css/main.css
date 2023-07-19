@@ -2160,6 +2160,12 @@ input, select, textarea {
 	padding-bottom: 2em; 
 }
 
+#question-form button.form-button-submit {
+	margin-top: 0.5em; /* Adjust the value to your preference */
+}
+#answer-section {
+	margin-bottom: 1em; /* Adjust the value to your preference */
+}
 
 
 /* Content */
