@@ -2157,10 +2157,9 @@ input, select, textarea {
 
 /* Main */
 #main {
-	
 	background: #fff;
 	text-align: center;
-	padding: 6em 0;
+	padding: 6em 0 !important;
 }
 
 	#features p {
