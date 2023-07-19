@@ -11,32 +11,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script>
-			function getAnswer() {
-			  // Get the user's question from the input field
-			  var question = document.getElementById("question-input").value;
-		  
-			  // You can implement the answer retrieval logic here, whether using an API, database, or a simple if-else statement based on the user's input
-		  
-			  // For demonstration purposes, let's use a simple if-else statement to generate answers
-			  var answer = getSimpleAnswer(question);
-		  
-			  // Display the answer in the answer-container
-			  document.getElementById("answer-container").innerHTML = "<p><strong>Answer:</strong> " + answer + "</p>";
-			}
-		  
-			// Simple function to generate answers based on the user's question
-			function getSimpleAnswer(question) {
-			  // Add your own logic here to generate appropriate answers
-			  var defaultAnswer = "Sorry, I don't have an answer for that question.";
-			  if (question.toLowerCase().includes("hello")) {
-				return "Hello! How can I assist you today?";
-			  } else if (question.toLowerCase().includes("weather")) {
-				return "I'm sorry, I don't have access to weather information.";
-			  } else {
-				return defaultAnswer;
-			  }
-			}
-		  </script>
+  function getAnswer() {
+    // Get the user's question from the input field
+    var question = document.getElementById("question-input").value;
+
+    // You can implement the answer retrieval logic here, whether using an API, database, or a simple if-else statement based on the user's input
+
+    // For demonstration purposes, let's use a simple if-else statement to generate answers
+    var answer = getSimpleAnswer(question);
+
+    // Display the answer in the answer-container
+    document.getElementById("answer-container").innerHTML = "<p><strong>Answer:</strong> " + answer + "</p>";
+  }
+
+  // Simple function to generate answers based on the user's question
+  function getSimpleAnswer(question) {
+    // Add your own logic here to generate appropriate answers
+    var defaultAnswer = "Sorry, I don't have an answer for that question.";
+    if (question.toLowerCase().includes("hello")) {
+      return "Hello! How can I assist you today?";
+    } else if (question.toLowerCase().includes("weather")) {
+      return "I'm sorry, I don't have access to weather information.";
+    } else {
+      return defaultAnswer;
+    }
+  }
+</script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -137,14 +137,12 @@
 				</section>
 
 				<!-- Main -->
-				<section id="features">
+				<section id="main">
 					<div class="container">
-						<header>
-							<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
-						</header>
-						<div class="row aln-center">
-							<div class="col-4 col-6-medium col-12-small">
-				
+						<div class="row">
+							<header>
+								<h2><strong>Ask a Question</strong></h2>
+							  </header>
 							  <div>
 								<input type="text" id="question-input" placeholder="Type your question here..." />
 								<button onclick="getAnswer()">Get Answer</button>
