@@ -2167,6 +2167,7 @@ input, select, textarea {
 	border-radius: 10px;
   }
   
+  /* Customize the input box and existing button */
   .input-container {
 	display: flex;
 	align-items: center;
@@ -2187,22 +2188,20 @@ input, select, textarea {
 	min-width: 200px; /* Minimum width for the input */
   }
   
-  /* If you have an existing class for the button, use that class here */
-  /* For example, if your button class is .custom-button, replace 'button' with '.custom-button' */
-  .custom-button {
+  /* If your existing button class is .existing-button, replace 'button' with '.existing-button' */
+  .existing-button {
 	margin-left: 10px;
-	padding: 12px 24px;
+	padding: 12px 24px; /* Updated padding to match the existing button's padding */
 	font-size: 16px;
 	border: none;
 	border-radius: 8px;
-	background-color: #007bff;
-	color: #fff;
+	background-color: #ed786a; /* Updated to match the existing button's background color */
+	color: #fff !important;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
-  }
-  
-  .custom-button:hover {
-	background-color: #0056b3;
+	transition: background-color 0.25s ease-in-out; /* Updated transition duration to match the existing button's transition */
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 2px;
   }
   
   /* Chat-like display */
