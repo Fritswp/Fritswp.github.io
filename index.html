@@ -139,6 +139,7 @@
 					</div>
 				</div>
 	
+	
 				<!-- Answer Section -->
 				<div class="row">
 					<div class="col-12">
@@ -245,11 +246,19 @@
 
 				// Here, you can process the user's question using an API or your own logic.
 				// For simplicity, let's just display a dummy response.
+<<<<<<< HEAD
 				var dummyResponse = "Thanks for trying, unfortunately I'm currently not able to answer your qeustion :()";
 
 				// Clear the user's question and display the dummy response
 				$('#user-question').val('');
 				$('#answer-section').html('<p>' + dummyResponse + '</p>');
+=======
+				var dummyResponse = "Sorry, I currently do not have the answer to your question.";
+
+				// Clear the user's question and display the dummy response
+				$('#user-question').val('');
+				$('#answer-section').html('<p><strong>Answer: </strong>' + dummyResponse + '</p>');
+>>>>>>> parent of a09e744 (Revert "Safe v1")
 			});
 		});
 	</script>
