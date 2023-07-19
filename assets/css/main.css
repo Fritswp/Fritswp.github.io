@@ -2155,64 +2155,67 @@ input, select, textarea {
 			}
 
 /* Main */
+/* Main */
 #main {
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    border-bottom: solid 2px #e5e5e5;
-    padding: 2em 0 8em 0;
-}
-
-/* Customize the input box and button */
-.input-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the input and button horizontally */
-    margin-top: 2em;
-}
-
-#question-input {
-    flex: 1;
-    padding: 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: none;
-}
-
-button {
-    margin-left: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Chat-like display */
-.chat-container {
-    max-height: 400px; /* Adjust the maximum height of the chat container if needed */
-    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.chat-container p {
-    margin: 5px 0;
-}
-
-.user-question {
-    text-align: right;
-}
-
-.bot-answer {
-    text-align: left;
-    font-weight: bold;
-}
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	border-bottom: solid 2px #e5e5e5;
+	padding: 2em 0 8em 0;
+  }
+  
+  /* Question container */
+  .question-container {
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Center the input and button horizontally */
+	margin-top: 2em;
+  }
+  
+  /* Question input */
+  #question-input {
+	flex: 1;
+	padding: 15px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: none;
+  }
+  
+  /* Chat bot button */
+  button {
+	margin-left: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  /* Chat-like display */
+  .chat-container {
+	max-height: 400px; /* Adjust the maximum height of the chat container if needed */
+	overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 20px;
+  }
+  
+  .chat-container p {
+	margin: 5px 0;
+  }
+  
+  .user-question {
+	text-align: right;
+  }
+  
+  .bot-answer {
+	text-align: left;
+	font-weight: bold;
+  }
 
 /* Content */
 
