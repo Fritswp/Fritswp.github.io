@@ -2158,7 +2158,16 @@ input, select, textarea {
 /* Main */
 #main {
 	padding-bottom: 2em; 
-	background-color: white;
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		color: #fff;
+		text-align: center;
+		border-top: solid 2px #e5e5e5;
+		border-bottom: solid 2px #e5e5e5;
+		position: relative;
+		background-size: cover;
+		padding: 10em 0;
 }
 
 #question-form button.form-button-submit {
