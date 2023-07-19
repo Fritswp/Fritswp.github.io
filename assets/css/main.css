@@ -2161,8 +2161,8 @@ input, select, textarea {
 }
 
 #question-form button.form-button-submit {
-	margin-top: 2em; /* Adjust the value to your preference */
-	margin-bottom: 2em; /* Adjust the value to your preference */
+	margin-top: 0.5em; /* Adjust the value to your preference */
+	margin-bottom: 0.5em; /* Adjust the value to your preference */
 }
 
 
