@@ -10,33 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script>
-			function getAnswer() {
-			  // Get the user's question from the input field
-			  var question = document.getElementById("question-input").value;
-		  
-			  // You can implement the answer retrieval logic here, whether using an API, database, or a simple if-else statement based on the user's input
-		  
-			  // For demonstration purposes, let's use a simple if-else statement to generate answers
-			  var answer = getSimpleAnswer(question);
-		  
-			  // Display the answer in the answer-container
-			  document.getElementById("answer-container").innerHTML = "<p><strong>Answer:</strong> " + answer + "</p>";
-			}
-		  
-			// Simple function to generate answers based on the user's question
-			function getSimpleAnswer(question) {
-			  // Add your own logic here to generate appropriate answers
-			  var defaultAnswer = "Sorry, I don't have an answer for that question.";
-			  if (question.toLowerCase().includes("hello")) {
-				return "Hello! How can I assist you today?";
-			  } else if (question.toLowerCase().includes("weather")) {
-				return "I'm sorry, I don't have access to weather information.";
-			  } else {
-				return defaultAnswer;
-			  }
-			}
-		  </script>
+		
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -145,6 +119,35 @@
 				</section>
 
 			<!-- Main -->
+			<section id="main" class="container">
+				<header>
+					<h2>Ask a Question</h2>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<!-- User Question Form -->
+						<form id="question-form">
+							<div class="row gtr-50">
+								<div class="col-12">
+									<textarea id="user-question" name="user-question" placeholder="Type your question here"></textarea>
+								</div>
+								<div class="col-12">
+									<button type="submit" class="form-button-submit button icon solid fa-question">Ask</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+	
+				<!-- Answer Section -->
+				<div class="row">
+					<div class="col-12">
+						<div id="answer-section">
+							<!-- Answers will appear here -->
+						</div>
+					</div>
+				</div>
+			</section>
 	
 
 			<!-- Footer -->
@@ -226,12 +229,30 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+	<script>
+		// JavaScript to handle user questions and answers
+		$(document).ready(function () {
+			$('#question-form').on('submit', function (event) {
+				event.preventDefault();
+				var userQuestion = $('#user-question').val();
+
+				// Here, you can process the user's question using an API or your own logic.
+				// For simplicity, let's just display a dummy answer.
+				var answer = "This is a dummy answer to '" + userQuestion + "'";
+
+				// Clear the user's question and display the answer
+				$('#user-question').val('');
+				$('#answer-section').html('<p><strong>Your Question: </strong>' + userQuestion + '</p>' +
+					'<p><strong>Answer: </strong>' + answer + '</p>');
+			});
+		});
+	</script>
+</body>
 </html>
