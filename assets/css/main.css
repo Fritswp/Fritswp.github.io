@@ -2158,9 +2158,6 @@ input, select, textarea {
 	/* Main */
 	#main {
 		padding-bottom: 2em; 
-		position: relative;
-		overflow: hidden;
-		background: #fff;
 	}
 
 #question-form button.form-button-submit {
