@@ -2155,24 +2155,22 @@ input, select, textarea {
 			}
 
 /* Main */
-/* Main */
 #main {
 	position: relative;
 	overflow: hidden;
-	background: #fff;
-	border-bottom: solid 2px #e5e5e5;
-	padding: 2em 0 8em 0;
+	background: #f8f8f8; /* Changed background color to a lighter shade */
+	padding: 2em;
+	border-radius: 10px; /* Added border-radius for a rounded look */
   }
   
-  /* Question container */
-  .question-container {
+  /* Customize the input box and button */
+  .input-container {
 	display: flex;
 	align-items: center;
-	justify-content: center; /* Center the input and button horizontally */
+	justify-content: center;
 	margin-top: 2em;
   }
   
-  /* Question input */
   #question-input {
 	flex: 1;
 	padding: 15px;
@@ -2182,30 +2180,35 @@ input, select, textarea {
 	box-shadow: none;
   }
   
-  /* Chat bot button */
   button {
 	margin-left: 10px;
-	padding: 10px 20px;
+	padding: 12px 24px; /* Adjusted padding for a more balanced button */
 	font-size: 16px;
 	border: none;
 	border-radius: 8px;
 	background-color: #007bff;
 	color: #fff;
 	cursor: pointer;
+	transition: background-color 0.3s ease; /* Added a smooth transition on hover */
+  }
+  
+  button:hover {
+	background-color: #0056b3; /* Darker shade on hover */
   }
   
   /* Chat-like display */
   .chat-container {
-	max-height: 400px; /* Adjust the maximum height of the chat container if needed */
-	overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+	max-height: 400px;
+	overflow-y: auto;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-top: 20px; /* Adjusted margin for separation from the input section */
   }
   
   .chat-container p {
 	margin: 5px 0;
+	padding: 5px 8px; /* Added padding for a bit of spacing between chat messages */
   }
   
   .user-question {
@@ -2216,6 +2219,7 @@ input, select, textarea {
 	text-align: left;
 	font-weight: bold;
   }
+  
 
 /* Content */
 
