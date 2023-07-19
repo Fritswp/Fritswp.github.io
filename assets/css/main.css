@@ -2155,19 +2155,20 @@ input, select, textarea {
 			}
 
 /* Main */
-
 #main {
     position: relative;
     overflow: hidden;
     background: #fff;
     border-bottom: solid 2px #e5e5e5;
-    padding: 0em 0 8em 0;
+    padding: 2em 0 8em 0;
 }
 
 /* Customize the input box and button */
 .input-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the input and button horizontally */
+    margin-top: 2em;
 }
 
 #question-input {
@@ -2192,7 +2193,7 @@ button {
 
 /* Chat-like display */
 .chat-container {
-    max-height: 300px; /* Adjust the maximum height of the chat container if needed */
+    max-height: 400px; /* Adjust the maximum height of the chat container if needed */
     overflow-y: auto; /* Enable vertical scrolling if the content overflows */
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -2212,16 +2213,6 @@ button {
     text-align: left;
     font-weight: bold;
 }
-
-
-	#question-input {
-		width: 50%; /* Make the input box fill the entire width of its container */
-		padding: 15px; /* Add some padding to the input box */
-		font-size: 16px; /* Adjust the font size of the text inside the input box */
-		border: 1px solid #ccc; /* Add a border around the input box */
-		border-radius: 8px; /* Add some border radius for a rounded appearance */
-		box-shadow: none; /* Remove any default box shadow, if applied */
-	}
 
 /* Content */
 
