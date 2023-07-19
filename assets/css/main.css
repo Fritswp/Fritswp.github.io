@@ -2157,76 +2157,64 @@ input, select, textarea {
 
 /* Main */
 #main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	background: #f8f8f8;
-	padding: 2em;
-	border-radius: 10px;
-  }
-  
-  /* Customize the input box and existing button */
-  .input-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap; /* Allow the button to wrap to the next line if needed */
-	max-width: 400px; /* Limit the width of the input container */
-	margin-top: 2em;
-  }
-  
-  #question-input {
-	flex: 1;
-	padding: 10px; /* Added padding on all sides to create some space */
-	margin-right: 10px; /* Added margin to the right of the input for spacing */
-	font-size: 16px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	box-shadow: none;
-	min-width: 200px; /* Minimum width for the input */
-  }
-  
-  /* If your existing button class is .existing-button, replace 'button' with '.existing-button' */
-  .existing-button {
-	margin-left: 10px;
-	padding: 12px 24px; /* Updated padding to match the existing button's padding */
-	font-size: 16px;
-	border: none;
-	border-radius: 8px;
-	background-color: #ed786a; /* Updated to match the existing button's background color */
-	color: #fff !important;
-	cursor: pointer;
-	transition: background-color 0.25s ease-in-out; /* Updated transition duration to match the existing button's transition */
-	font-weight: 600;
-	text-align: center;
-	letter-spacing: 2px;
-  }
-  
-  /* Chat-like display */
-  .chat-container {
-	max-height: 400px;
-	overflow-y: auto;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	padding: 10px;
-	margin-top: 20px;
-  }
-  
-  .chat-container p {
-	margin: 5px 0;
-	padding: 5px 8px;
-  }
-  
-  .user-question {
-	text-align: right;
-  }
-  
-  .bot-answer {
-	text-align: left;
-	font-weight: bold;
-  }
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: solid 2px #e5e5e5;
+    padding: 2em 0 8em 0;
+}
+
+/* Customize the input box and button */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the input and button horizontally */
+    margin-top: 2em;
+}
+
+#question-input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: none;
+    padding-right: 20px; /* Increase the padding on the right side of the input box */
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Chat-like display */
+.chat-container {
+    max-height: 400px; /* Adjust the maximum height of the chat container if needed */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.chat-container p {
+    margin: 5px 0;
+}
+
+.user-question {
+    text-align: right;
+}
+
+.bot-answer {
+    text-align: left;
+    font-weight: bold;
+}
 
 /* Content */
 
