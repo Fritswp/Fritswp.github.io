@@ -2158,6 +2158,7 @@ input, select, textarea {
 /* Main */
 #main {
 	padding-bottom: 2em; 
+	background-color: white;
 }
 
 #question-form button.form-button-submit {
