@@ -2178,6 +2178,10 @@ input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: none;
+    outline: none; /* Remove the border when focused */
+    width: 50%; /* Set the input box to 50% width */
+    margin-left: 25%; /* Add 25% space on the left */
+    margin-right: 25%; /* Add 25% space on the right */
 }
 
 button {
@@ -2189,6 +2193,29 @@ button {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
+}
+
+/* Chat-like display */
+.chat-container {
+    max-height: 400px; /* Adjust the maximum height of the chat container if needed */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.chat-container p {
+    margin: 5px 0;
+}
+
+.user-question {
+    text-align: right;
+}
+
+.bot-answer {
+    text-align: left;
+    font-weight: bold;
 }
 
 /* Chat-like display */
