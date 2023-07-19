@@ -2156,7 +2156,9 @@ input, select, textarea {
 
 
 /* Main */
-
+#main {
+	padding-bottom: 2em; 
+}
 
 
 
@@ -2311,6 +2313,7 @@ input, select, textarea {
 
 			#main {
 				padding: 4em 0;
+				padding-bottom: 2em; 
 			}
 
 		/* Footer */
@@ -2654,6 +2657,7 @@ input, select, textarea {
 
 			#main {
 				padding: 2em 0;
+				padding-bottom: 2em; 
 			}
 
 		/* Content */
