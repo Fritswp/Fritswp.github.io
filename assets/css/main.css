@@ -2166,11 +2166,6 @@ input, select, textarea {
 	margin-bottom: 0.5em; /* Adjust the value to your preference */
 }
 
-#user-question {
-	resize: none; /* Prevents resizing of the textarea */
-	width: 100%; /* Optionally, you can set a fixed width for the textarea */
-}
-
 
 /* Content */
 
