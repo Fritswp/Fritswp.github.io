@@ -244,13 +244,12 @@
 				var userQuestion = $('#user-question').val();
 
 				// Here, you can process the user's question using an API or your own logic.
-				// For simplicity, let's just display a dummy answer.
-				var answer = "This is a dummy answer to '" + userQuestion + "'";
+				// For simplicity, let's just display a dummy response.
+				var dummyResponse = "Thanks for trying, unfortunately I'm currently not able to answer your qeustion :()";
 
-				// Clear the user's question and display the answer
+				// Clear the user's question and display the dummy response
 				$('#user-question').val('');
-				$('#answer-section').html('<p><strong>Your Question: </strong>' + userQuestion + '</p>' +
-					'<p><strong>Answer: </strong>' + answer + '</p>');
+				$('#answer-section').html('<p>' + dummyResponse + '</p>');
 			});
 		});
 	</script>
