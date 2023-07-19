@@ -2159,17 +2159,17 @@ input, select, textarea {
 #main {
 	background: #fff;
 	text-align: center;
-	padding: 6em 0 !important;
+	padding: 4em 0; /* You can keep 2em 0 or 6em 0 if you prefer */
 }
 
-	#features p {
-		text-align: center;
-	}
+#features p {
+	text-align: center;
+}
 
-	#features ul.actions {
-		margin-top: 1.25em;
-		margin-bottom: 1.25em
-	}
+#features ul.actions {
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+}
 
 
 
