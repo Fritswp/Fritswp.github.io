@@ -11319,7 +11319,9 @@ textarea.form-control-lg {
   /* Center the bubble itself */
   align-items: center;
   /* Center the text vertically within the bubble */
-  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .user {
