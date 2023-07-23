@@ -11312,12 +11312,13 @@ textarea.form-control-lg {
   overflow-y: auto;
   overflow: hidden;
   scroll-behavior: smooth;
+  word-wrap: break-word;
 }
 
 .user {
   background-color: #007bff;
   color: #ffffff;
-  text-align: right;
+  text-align: left;
 }
 
 .chatbot {
