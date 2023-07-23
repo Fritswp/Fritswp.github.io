@@ -5015,28 +5015,11 @@
 })));
 
 // Chatobx JS //
-function sendMessage() {
-  const userMsg = document.getElementById("user-input").value;
-  if (userMsg.trim() === "") return;
 
-  const chatBox = document.getElementById("chat-box");
-
-  // Append user message to the chat box
-  const userMsgDiv = document.createElement("div");
-  userMsgDiv.className = "chat-msg user-msg";
-  userMsgDiv.innerHTML = `<span class="msg-content">${userMsg}</span>`;
-  chatBox.appendChild(userMsgDiv);
-
-  // Simulate AI response (you can replace this with the actual AI response)
-  const aiMsgDiv = document.createElement("div");
-  aiMsgDiv.className = "chat-msg ai-msg";
-  aiMsgDiv.innerHTML = `<span class="msg-content">I'm sorry, I can't answer that right now.</span>`;
-  chatBox.appendChild(aiMsgDiv);
-
-  // Clear the user input
-  document.getElementById("user-input").value = "";
-
-  // Scroll to the bottom of the chat box to show the latest message
-  chatBox.scrollTop = chatBox.scrollHeight;
+function handleEnterKey(event) {
+  if (event.key === "Enter") {
+    sendUserMessage();
+  }
 }
+
 //# sourceMappingURL=bootstrap.js.map

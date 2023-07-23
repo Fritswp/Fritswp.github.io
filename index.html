@@ -168,7 +168,7 @@
     <!-- Chat messages will be dynamically added here -->
   </div>
   <div class="user-input">
-    <input type="text" id="user-input" placeholder="Type your message here...">
+    <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="handleEnterKey(event)">
     <button onclick="sendUserMessage()">Send</button>
   </div>
 </div>
@@ -832,5 +832,6 @@
     
     </script>
      <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <script src="bootstrap.js"></script>
 </body>
 </html>
