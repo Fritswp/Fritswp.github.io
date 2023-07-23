@@ -1,5 +1,5 @@
 function handleEnterKey(event) {
-    if (event.key === "Enter") {
-      sendUserMessage();
-    }
+  if (event.key === "Enter") {
+    sendUserMessage();
   }
+}
