@@ -160,25 +160,37 @@
 
   <!-- START THE CONTENT FOR THE SERVICES  -->
   <div class="container">
-    <!-- START THE MARKETING CONTENT  -->
+    <!-- START  -->
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 chat-box mt-4">
         <div class="chat-output" id="chat-output">
           <!-- Chatbot welcome message -->
-          <div class="chat-bubble chatbot">
-            <p>
-              Chatbot: Hi! How can I assist you today?
-            </p>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 chat-box mt-4">
+              <div class="chat-container">
+                <div class="chat-box">
+                  <div class="chat-header">
+                    <h2>ChatGPT Bot</h2>
+                  </div>
+                  <!-- Single .chat-output div for all chat bubbles -->
+                  <div class="chat-output" id="chat-output">
+                    <!-- Chatbot welcome message -->
+                    <div class="chat-bubble chatbot">
+                      <p>
+                        Hi! How can I assist you today?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="chat-input">
+                    <!-- User Input -->
+                    <input type="text" id="user-input" placeholder="Type your question here...">
+                    <button type="button" onclick="sendUserMessage()">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    
-        <div class="chat-input">
-          <!-- User Input -->
-          <input type="text" id="user-input" placeholder="Type your question here...">
-          <button type="button" onclick="sendUserMessage()">Send</button>
-        </div>
-      </div>
-    </div>
     
     <!-- START THE WEB DEVELOPMENT CONTENT  -->
     <div class="row">
@@ -768,7 +780,59 @@
 
 <!-- CHATBOT SCRIPT  -->
 
+<script>
+  // Function to send user message and receive chatbot response
+  function sendUserMessage() {
+    const userInput = document.getElementById("user-input").value;
+    if (userInput.trim() === "") {
+      return; // If the user input is empty, do nothing
+    }
 
+    // Clear the input box
+    document.getElementById("user-input").value = "";
+
+    // Add user message to the chat output
+    const chatOutput = document.getElementById("chat-output");
+    chatOutput.innerHTML += `
+      <div class="chat-bubble user">
+        <p>
+          User: ${userInput}
+        </p>
+      </div>
+    `;
+
+    // Simulate chatbot response (for this example, use static responses)
+    const chatbotResponse = getChatbotResponse(userInput);
+
+    // Add chatbot response to the chat output
+    chatOutput.innerHTML += `
+      <div class="chat-bubble chatbot">
+        <p>
+          Chatbot: ${chatbotResponse}
+        </p>
+      </div>
+    `;
+
+    // Scroll to the bottom of the chat output to show the latest message
+    chatOutput.scrollTop = chatOutput.scrollHeight;
+  }
+
+  // Function to get chatbot response (for this example, use static responses)
+  function getChatbotResponse(userInput) {
+    // You can implement your own logic here to generate dynamic responses
+    // For this demonstration, we'll use simple static responses
+    const responses = {
+      "hello": "Hello! How can I help you?",
+      "how are you": "I'm just a chatbot, but thanks for asking!",
+      "what's your name": "I am ChatGPT, a friendly chatbot.",
+      // Add more static responses here...
+      "default": "I'm sorry, but I don't have an answer to that question."
+    };
+
+    const lowerCaseInput = userInput.toLowerCase();
+    return responses[lowerCaseInput] || responses["default"];
+  }
+</script>
 
    
     <script src="assets/vendors/js/glightbox.min.js"></script>
