@@ -2,24 +2,6 @@
 let isFirstUserMessageSent = false;
 
 function sendUserMessage() {
-  var userMessage = document.getElementById("user-input").value;
-  if (userMessage.trim() !== "") {
-    // Code to process the user's message and generate a response (not shown here)
-    // Once you have the chatbot response, update the chat output and show it
-    var chatOutput = document.getElementById("chat-output");
-    chatOutput.style.display = "flex"; // Display the chat output
-    // Code to add the chat bubbles and their content (user and chatbot messages) to the chat-output (not shown here)
-    // Example: chatOutput.innerHTML += "<div class='chat-bubble user'>" + userMessage + "</div>";
-  }
-}
-
-function handleEnterKey(event) {
-  if (event.key === "Enter") {
-    sendUserMessage();
-  }
-}
-
-function sendUserMessage() {
   const userInput = document.getElementById("user-input").value;
   if (userInput.trim() === "") {
     return; // If the user input is empty, do nothing
@@ -34,21 +16,21 @@ function sendUserMessage() {
     isFirstUserMessageSent = true;
   }
 
-  // Add user message to the chat output
+  // Create user message bubble
   const chatOutput = document.getElementById("chat-output");
   const userMsgDiv = document.createElement("div");
   userMsgDiv.className = "chat-bubble user";
-  userMsgDiv.innerHTML = `<p>User: ${userInput}</p>`;
-  chatOutput.appendChild(userMsgDiv);
-
-  // Simulate chatbot response (for this example, use static responses)
+  userMsgDiv.innerHTML = `<p>You: ${userInput}</p>`;
+  
+  // Create chatbot response bubble
   const chatbotResponse = getChatbotResponse(userInput);
-
-  // Add chatbot response to the chat output
   const chatbotMsgDiv = document.createElement("div");
   chatbotMsgDiv.className = "chat-bubble chatbot";
   chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${chatbotResponse}</p>`;
-  chatOutput.appendChild(chatbotMsgDiv);
+
+  // Insert the new chat messages at the top of the chat-output
+  chatOutput.insertBefore(chatbotMsgDiv, chatOutput.firstChild);
+  chatOutput.insertBefore(userMsgDiv, chatOutput.firstChild);
 
   // Scroll to the bottom of the chat output to show the latest message
   chatOutput.scrollTop = chatOutput.scrollHeight;
