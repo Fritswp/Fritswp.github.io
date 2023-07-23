@@ -35,7 +35,7 @@ function sendUserMessage() {
   // Add chatbot response to the chat output
   const chatbotMsgDiv = document.createElement("div");
   chatbotMsgDiv.className = "chat-bubble chatbot";
-  chatbotMsgDiv.innerHTML = `<p>Chatbot: ${chatbotResponse}</p>`;
+  chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${chatbotResponse}</p>`;
   chatOutput.appendChild(chatbotMsgDiv);
 
   // Scroll to the bottom of the chat output to show the latest message
@@ -49,7 +49,7 @@ function getChatbotResponse(userInput) {
   const responses = {
     "hello": "Hello! How can I help you?",
     "how are you": "I'm just a chatbot, but thanks for asking!",
-    "what's your name": "I am ChatGPT, a friendly chatbot.",
+    "what's your name": "I am TioAssist.io, a friendly chatbot.",
     // Add more static responses here...
     "default": "I'm sorry, but I don't have an answer to that question."
   };
