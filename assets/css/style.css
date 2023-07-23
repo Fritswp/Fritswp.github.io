@@ -11429,18 +11429,18 @@ textarea.form-control-lg {
 }
 
 #contact .info p {
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 14px;
 }
 
 #contact .info .email p {
-  padding: 20px;
+  padding: 30px;
 }
 
 #contact .social-links {
-  padding: 20px;
+  padding: 30px;
 }
 
 #contact .social-links a {
@@ -11449,7 +11449,7 @@ textarea.form-control-lg {
   background: #71c55d;
   color: #fff;
   line-height: 1;
-  padding: 20px;
+  padding: 6px 0 8px 0;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -11467,10 +11467,9 @@ textarea.form-control-lg {
   border: 1px solid #71c55d;
   display: none;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-weight: 600;
   margin-bottom: 15px;
-  
 }
 
 #contact .form #errormessage {
@@ -11478,7 +11477,7 @@ textarea.form-control-lg {
   display: none;
   border: 1px solid red;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -11514,7 +11513,6 @@ textarea.form-control-lg {
 #contact .form button[type="submit"]:hover {
   background: #92d283;
 }
-
 
 /*--------------------------------------------------------------
 # Sections
