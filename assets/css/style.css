@@ -11023,7 +11023,7 @@ textarea.form-control-lg {
 }
 
 .portfolio {
-  padding:  0;
+  padding: 4rem 0;
 }
 .portfolio button {
   text-transform: capitalize;
@@ -11077,9 +11077,7 @@ textarea.form-control-lg {
 
 /* port */
 
-.port {
-  padding: 4rem 0;
-}
+
 .port button {
   text-transform: capitalize;
 }
