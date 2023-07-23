@@ -11266,8 +11266,9 @@ textarea.form-control-lg {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     display: none; /* Initially hide the chat output */
-    overflow: scroll;
-  }
+    display: flex; /* Make the chat-output container a flexbox */
+  flex-direction: column-reverse; /* Reverse the order of chat bubbles to make the latest at the bottom */
+}
 
   .chat-bubble {
     max-width: 100%;
@@ -11277,6 +11278,7 @@ textarea.form-control-lg {
     max-height: 50px;
     overflow-y: auto;
     overflow: hidden;
+    word-wrap: break-word; /* Wrap long words inside the chat bubble */
   }
 
   .user {
