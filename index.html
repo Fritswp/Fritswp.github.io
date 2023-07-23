@@ -165,7 +165,7 @@
                          START SECTION 5 - THE Chatbot  
 //////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-
+<section id="chatbot">
 <div class="chat-container chatbox"> <!-- Add the "chatbox" class here -->
   <div class="chat-output" id="chat-output">
     <!-- Chat messages will be dynamically added here -->
@@ -175,6 +175,7 @@
     <button onclick="sendUserMessage()">Send</button>
   </div>
 </div>
+</section>
 
     
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////
@@ -743,9 +744,23 @@
     });
   });
 </script>
-This JavaScript code adds a click event listener to the "Get in Touch" button. When the button is clicked, it calculates the offset distance between the button and the target section ("Catch-Up" section with id="portfolio"), then scrolls to that section smoothly.
 
-Please note that in the JavaScript code, you'll need to replace the /* Replace this value with the height of your fixed navbar, if any */ 0 with the actual height of your fixed navigation bar (if you have one). This ensures that the scrolling position is adjusted correctly to account for the navbar's height, so the section doesn't get hidden behind it. If you don't have a fixed navbar, you can leave it as 0.
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const getInTouchButton = document.getElementById("tryMeButton");
+    getInTouchButton.addEventListener("click", function () {
+      const portfolioSection = document.getElementById("chatbot");
+      const offsetTop = portfolioSection.getBoundingClientRect().top;
+      const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 0;
+      const scrollPosition = offsetTop + window.scrollY - navbarHeight;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+    });
+  });
+</script>
 
 
 <script>
