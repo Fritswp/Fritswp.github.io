@@ -11213,7 +11213,6 @@ textarea.form-control-lg {
 }
 
   /* chatbox-styles.css */
-
   .chat-container {
     max-width: 800px;
     margin: 50px auto;
@@ -11259,6 +11258,7 @@ textarea.form-control-lg {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     display: none; /* Initially hide the chat output */
+    position: sticky;
   }
   
   .chat-bubble {
