@@ -11250,7 +11250,6 @@ textarea.form-control-lg {
   }
   
   .chat-output {
-    max-height: 300px; /* Set a fixed height for the chat output container */
     overflow-y: auto;
     padding: 1px;
     background-color: #ffffff;
