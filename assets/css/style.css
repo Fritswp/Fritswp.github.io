@@ -11215,9 +11215,13 @@ textarea.form-control-lg {
 /* chatbox-styles.css */
 
 .chat-container {
-  max-width: 400px;
   width: 100%;
-  margin: 0 auto; /* Add this line to center the chatbot */
+  height: 100vh; /* Set the chat container to cover the entire viewport */
+  padding: 20px; /* Add some padding at the edges */
+  box-sizing: border-box; /* Include padding in the total width/height calculation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-box {
@@ -11225,6 +11229,8 @@ textarea.form-control-lg {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the chatbox */
 }
 
 .chat-header {
