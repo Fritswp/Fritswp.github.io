@@ -11221,6 +11221,17 @@ textarea.form-control-lg {
   }
 }
 
+/* padding between contact box */
+
+.row.text-center h1 {
+  margin-top: 0;
+}
+
+.contact {
+  margin-top: 0;
+}
+
+
 .footer-sm a {
   color: #fff;
 }
