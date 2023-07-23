@@ -11426,7 +11426,9 @@ textarea.form-control-lg {
   font-size: 32px;
   color: #71c55d;
   float: left;
-  margin-right: 20px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 #contact .info p {
