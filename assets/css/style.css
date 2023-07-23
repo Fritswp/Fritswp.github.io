@@ -11429,7 +11429,7 @@ textarea.form-control-lg {
   margin-bottom: 10px;
   padding-left: 10px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
 }
 
 #contact .info p {
