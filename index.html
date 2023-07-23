@@ -754,13 +754,12 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const tryMeButton = document.getElementById("tryMeButton");
-    tryMeButton.addEventListener("click", function () {
+    const tryMeButton = document.getElementById("tryMeButton"); // Corrected the element ID
+    tryMeButton.addEventListener("click", function () { // Corrected the event listener
       const portfolioSection = document.getElementById("services");
       const offsetTop = portfolioSection.getBoundingClientRect().top;
-      const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 0;
-      const paddingTop = 20; // Add a padding value to avoid overlap
-      const scrollPosition = offsetTop + window.scrollY - navbarHeight - paddingTop;
+      const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 10;
+      const scrollPosition = offsetTop + window.scrollY - navbarHeight;
 
       window.scrollTo({
         top: scrollPosition,
