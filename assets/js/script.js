@@ -1,3 +1,6 @@
+// Add this global variable to track whether the first user message is sent
+let isFirstUserMessageSent = false;
+
 function handleEnterKey(event) {
   if (event.key === "Enter") {
     sendUserMessage();
@@ -14,12 +17,13 @@ function sendUserMessage() {
   document.getElementById("user-input").value = "";
 
   // Show the chat output after the first user message is sent
-  const chatOutput = document.getElementById("chat-output");
-  if (chatOutput.style.display === "none") {
-    chatOutput.style.display = "block";
+  if (!isFirstUserMessageSent) {
+    document.getElementById("chat-output").style.display = "block";
+    isFirstUserMessageSent = true;
   }
 
   // Add user message to the chat output
+  const chatOutput = document.getElementById("chat-output");
   const userMsgDiv = document.createElement("div");
   userMsgDiv.className = "chat-bubble user";
   userMsgDiv.innerHTML = `<p>User: ${userInput}</p>`;
