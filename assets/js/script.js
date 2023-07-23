@@ -15,7 +15,7 @@ function sendUserMessage() {
     document.getElementById("chat-output").style.display = "block";
     isFirstUserMessageSent = true;
   }
-
+  
   // Create user message bubble
   const chatOutput = document.getElementById("chat-output");
   const userMsgDiv = document.createElement("div");
