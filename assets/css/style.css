@@ -11270,10 +11270,11 @@ body {
 
 .chat-bubble {
   max-width: 70%;
-  max-height: 20%;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
+  max-height: 50px;
+  overflow-y: auto;
 }
 
 .user {
