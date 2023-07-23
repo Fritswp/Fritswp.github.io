@@ -36,6 +36,12 @@ function sendUserMessage() {
   chatOutput.scrollTop = chatOutput.scrollHeight;
 }
 
+function handleEnterKey(event) {
+  if (event.key === "Enter") {
+    sendUserMessage();
+  }
+}
+
 // Function to get chatbot response (for this example, use static responses)
 function getChatbotResponse(userInput) {
   // You can implement your own logic here to generate dynamic responses
