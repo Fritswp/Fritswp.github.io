@@ -163,30 +163,28 @@
     <!-- START CHATBOT HERE  -->
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 chat-box mt-4">
-        <div class="chat-container">
-          <div class="chat-box">
-            <div class="chat-header">
-              <h2>ChatGPT Bot</h2>
-            </div>
-            <!-- Single .chat-output div for all chat bubbles -->
-            <div class="chat-output" id="chat-output">
-              <!-- Chatbot welcome message -->
-              <div class="chat-bubble chatbot">
-                <p>
-                  Hi! How can I assist you today?
-                </p>
+        <div class="chat-output" id="chat-output">
+          <!-- Chatbot welcome message -->
+          <div class="chat-container">
+            <div class="chat-box">
+              <div class="chat-header">
+                <h2>ChatGPT Bot</h2>
+              </div>
+              <div class="chat-output" id="chat-output">
+                <!-- Chatbot welcome message -->
+                <div class="chat-bubble chatbot">
+                  <p>
+                    Hi! How can I assist you today?
+                  </p>
+                </div>
+              </div>
+              <div class="chat-input">
+                <!-- User Input -->
+                <input type="text" id="user-input" placeholder="Type your question here...">
+                <button type="button" onclick="sendUserMessage()">Send</button>
               </div>
             </div>
-            <div class="chat-input">
-              <!-- User Input -->
-              <input type="text" id="user-input" placeholder="Type your question here...">
-              <button type="button" onclick="sendUserMessage()">Send</button>
-            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
     
     <!-- START THE WEB DEVELOPMENT CONTENT  -->
     <div class="row">
