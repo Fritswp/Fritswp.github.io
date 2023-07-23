@@ -11257,9 +11257,10 @@ textarea.form-control-lg {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
-  display: hidden;
+  display: flex;
   flex-direction: column-reverse;
   position: sticky;
+  display: none;
 }
 
 .chat-bubble {

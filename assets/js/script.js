@@ -1,6 +1,18 @@
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
 
+function sendUserMessage() {
+  var userMessage = document.getElementById("user-input").value;
+  if (userMessage.trim() !== "") {
+    // Code to process the user's message and generate a response (not shown here)
+    // Once you have the chatbot response, update the chat output and show it
+    var chatOutput = document.getElementById("chat-output");
+    chatOutput.style.display = "flex"; // Display the chat output
+    // Code to add the chat bubbles and their content (user and chatbot messages) to the chat-output (not shown here)
+    // Example: chatOutput.innerHTML += "<div class='chat-bubble user'>" + userMessage + "</div>";
+  }
+}
+
 function handleEnterKey(event) {
   if (event.key === "Enter") {
     sendUserMessage();
