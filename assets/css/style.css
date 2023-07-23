@@ -11418,10 +11418,14 @@ textarea.form-control-lg {
 
 /* TIO - Penguin image */
 
+
+
 @media (max-width: 768px) {
   .image-box img {
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
     width: 200px;
-    height: 200px;
   }
 }
 
