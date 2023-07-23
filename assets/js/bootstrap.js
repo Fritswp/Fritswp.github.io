@@ -5016,10 +5016,6 @@
 
 // Chatobx JS //
 
-function handleEnterKey(event) {
-  if (event.key === "Enter") {
-    sendUserMessage();
-  }
-}
+
 
 //# sourceMappingURL=bootstrap.js.map
