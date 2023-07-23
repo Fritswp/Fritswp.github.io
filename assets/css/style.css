@@ -11214,6 +11214,10 @@ textarea.form-control-lg {
 
 /* chatbox */
 
+.chatbox {
+  /* Set the chatbox to be centered on all screen sizes */
+  margin: 0 auto;
+}
 
 .chatbox p {
   margin-top: 0;
@@ -11330,14 +11334,10 @@ textarea.form-control-lg {
 }
 
 /* Media Query for larger devices */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .chat-container {
-    max-width: 900px;
-    margin: 50px auto 10px;
-    /* Set the width of the chatbox to 900px */
-    /* Add padding to the chatbox */
-    /* Add 10px of margin to the right side of the chatbox */
-    padding-right: 10px; /* Add padding to the right side */
+    max-width: 100%;
+    /* Set the width of the chatbox to 100% */
   }
 }
 
