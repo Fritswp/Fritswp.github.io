@@ -11436,11 +11436,11 @@ textarea.form-control-lg {
 }
 
 #contact .info .email p {
-  padding-top: 5px;
+  padding: 20px;
 }
 
 #contact .social-links {
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 #contact .social-links a {
@@ -11449,7 +11449,7 @@ textarea.form-control-lg {
   background: #71c55d;
   color: #fff;
   line-height: 1;
-  padding: 6px 0 8px 0;
+  padding: 20px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -11470,6 +11470,7 @@ textarea.form-control-lg {
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+  
 }
 
 #contact .form #errormessage {
