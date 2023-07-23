@@ -169,20 +169,20 @@
   </div>
 </section>
 
-<div class="chat-container">
-  <div class="chat-box" id="chat-box">
-    <div class="chat-msg user-msg">
-      <span class="msg-content">Hello!</span>
+  <div class="chat-container">
+    <div class="chat-box" id="chat-box">
+      <div class="chat-msg user-msg">
+        <span class="msg-content">Hello!</span>
+      </div>
+      <div class="chat-msg ai-msg">
+        <span class="msg-content">Welcome to our AI chat! How can I assist you?</span>
+      </div>
     </div>
-    <div class="chat-msg ai-msg">
-      <span class="msg-content">Welcome to our AI chat! How can I assist you?</span>
+    <div class="user-input">
+      <input type="text" id="user-input" placeholder="Type your message here...">
+      <button onclick="sendMessage()">Send</button>
     </div>
   </div>
-  <div class="user-input">
-    <input type="text" id="user-input" placeholder="Type your message here...">
-    <button onclick="sendMessage()">Send</button>
-  </div>
-</div>
 
     <!-- START THE WEB DEVELOPMENT CONTENT  -->
     <div class="row">
@@ -772,7 +772,59 @@
 
 <!-- CHATBOT SCRIPT  -->
 
+<script>
+  // Function to send user message and receive chatbot response
+  function sendUserMessage() {
+    const userInput = document.getElementById("user-input").value;
+    if (userInput.trim() === "") {
+      return; // If the user input is empty, do nothing
+    }
 
+    // Clear the input box
+    document.getElementById("user-input").value = "";
+
+    // Add user message to the chat output
+    const chatOutput = document.getElementById("chat-output");
+    chatOutput.innerHTML += `
+      <div class="chat-bubble user">
+        <p>
+          User: ${userInput}
+        </p>
+      </div>
+    `;
+
+    // Simulate chatbot response (for this example, use static responses)
+    const chatbotResponse = getChatbotResponse(userInput);
+
+    // Add chatbot response to the chat output
+    chatOutput.innerHTML += `
+      <div class="chat-bubble chatbot">
+        <p>
+          Chatbot: ${chatbotResponse}
+        </p>
+      </div>
+    `;
+
+    // Scroll to the bottom of the chat output to show the latest message
+    chatOutput.scrollTop = chatOutput.scrollHeight;
+  }
+
+  // Function to get chatbot response (for this example, use static responses)
+  function getChatbotResponse(userInput) {
+    // You can implement your own logic here to generate dynamic responses
+    // For this demonstration, we'll use simple static responses
+    const responses = {
+      "hello": "Hello! How can I help you?",
+      "how are you": "I'm just a chatbot, but thanks for asking!",
+      "what's your name": "I am ChatGPT, a friendly chatbot.",
+      // Add more static responses here...
+      "default": "I'm sorry, but I don't have an answer to that question."
+    };
+
+    const lowerCaseInput = userInput.toLowerCase();
+    return responses[lowerCaseInput] || responses["default"];
+  }
+</script>
 
    
     <script src="assets/vendors/js/glightbox.min.js"></script>
