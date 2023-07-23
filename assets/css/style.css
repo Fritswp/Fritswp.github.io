@@ -11274,7 +11274,10 @@ body {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  text-align: center; /* Center the text within the chat bubble */
+  word-wrap: break-word; /* Wrap long words inside the chat bubble */
+  text-align: left; /* Align the text to the left within the chat bubble */
+  display: flex; /* Enable flexbox for vertical centering */
+  align-items: center; /* Vertically center the content */
 }
 
 .user {
