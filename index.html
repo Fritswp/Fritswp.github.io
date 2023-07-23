@@ -162,25 +162,21 @@
                          START SECTION 5 - THE Chatbot  
 ///////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-
-  <!-- START THE CONTENT FOR THE SERVICES  -->
-<section id="faq" class="faq">
+<section id="chat" class="chat">
   <div class="container">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold text-uppercase">Let's Chat</h1>
+      <div class="heading-line"></div>
+    </div>
   </div>
-</section>
 
-  <div class="chat-container">
-    <div class="chat-box" id="chat-box">
-      <div class="chat-msg user-msg">
-        <span class="msg-content">Hello!</span>
-      </div>
-      <div class="chat-msg ai-msg">
-        <span class="msg-content">Welcome to our AI chat! How can I assist you?</span>
-      </div>
+<div class="chat-container">
+    <div class="chat-output" id="chat-output">
+      <!-- Chat messages will be dynamically added here -->
     </div>
     <div class="user-input">
       <input type="text" id="user-input" placeholder="Type your message here...">
-      <button onclick="sendMessage()">Send</button>
+      <button onclick="sendUserMessage()">Send</button>
     </div>
   </div>
 
