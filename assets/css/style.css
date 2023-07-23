@@ -11215,8 +11215,8 @@ textarea.form-control-lg {
 /* chatbox */
 
 .chatbox p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 5;
+  margin-bottom: 5;
 }
 
 .chat-container {
