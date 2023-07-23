@@ -136,7 +136,7 @@
                          START SECTION 4 - THE Chatbot  
 ///////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<section id="services" class="services">
+<section id="services" class="port">
   <div class="container">
     <div class="row text-center mt-5">
       <h1 class="display-3 fw-bold text-capitalize">Let's Chat</h1>
@@ -754,12 +754,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const tryMeButton = document.getElementById("tryMeButton"); // Corrected the element ID
-    tryMeButton.addEventListener("click", function () { // Corrected the event listener
+    const tryMeButton = document.getElementById("tryMeButton");
+    tryMeButton.addEventListener("click", function () {
       const portfolioSection = document.getElementById("services");
       const offsetTop = portfolioSection.getBoundingClientRect().top;
       const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 0;
-      const scrollPosition = offsetTop + window.scrollY - navbarHeight;
+      const paddingTop = 20; // Add a padding value to avoid overlap
+      const scrollPosition = offsetTop + window.scrollY - navbarHeight - paddingTop;
 
       window.scrollTo({
         top: scrollPosition,
