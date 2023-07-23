@@ -11214,5 +11214,17 @@ textarea.form-control-lg {
 
 /* chatbox-styles.css */
 
+.chat-container {
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  display: flex; /* Use flexbox to center the chatbox */
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-box {
+  max-width: 600px; /* Set a maximum width for the chatbox to prevent it from getting too wide */
+  /* Add any other desired styling */
+}
+
 
 /*# sourceMappingURL=style.css.map */
