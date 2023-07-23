@@ -11212,13 +11212,13 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 
-/* chatbox */
 
+/* Chatbox */
 .chat-container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #ffffff;
-  border-radius: 10px;
+  background-color: #f0f0f0; /* Updated background color */
+  border-radius: 20px; /* Increased border-radius for a smoother appearance */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   box-sizing: border-box;
@@ -11226,6 +11226,8 @@ textarea.form-control-lg {
 
 .user-input {
   display: flex;
+  align-items: center; /* Center the input and button vertically */
+  margin-top: 20px; /* Added margin to separate user input from chat output */
 }
 
 .user-input input {
@@ -11235,17 +11237,20 @@ textarea.form-control-lg {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: #ffffff;
-  color: #212529;
+  color: #333; /* Changed the text color for better contrast */
+  font-size: 16px; /* Increased font size for better readability */
 }
 
 .user-input button {
-  padding: 10px;
+  padding: 10px 15px; /* Added some padding to the button */
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #007bff;
   color: #ffffff;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Added a smooth transition on hover */
 }
 
 .user-input button:hover {
@@ -11253,44 +11258,33 @@ textarea.form-control-lg {
 }
 
 .chat-output {
-  max-height: 300px; /* Set a fixed height for the chat output container */
+  max-height: 300px;
   overflow-y: auto;
-  background-color: #ffffff;
-  border-radius: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px; /* Increased border-radius for chat output */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  position: sticky;
   display: block;
+  padding: 15px; /* Added padding inside the chat output */
 }
 
 .chat-bubble {
-  max-width: 100%;
   margin: 5px;
-  padding: 5px;
+  padding: 10px; /* Increased padding for chat bubbles */
   border-radius: 10px;
-  max-height: fit-content;
-  overflow-y: auto;
-  overflow: hidden;
-  scroll-behavior: smooth;
   word-wrap: break-word;
-  text-align: left;
-  justify-content: center;
 }
 
 .user {
   background-color: #007bff;
   color: #ffffff;
   text-align: left;
-  justify-content: center;
 }
 
 .chatbot {
   background-color: #d0eaf5;
   color: #333;
   text-align: left;
-  justify-content: center;
 }
 
 .chat-bubble.user {
@@ -11304,9 +11298,8 @@ textarea.form-control-lg {
 }
 
 /* Customization */
-
 .chat-container {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border-color: #d0eaf5;
 }
 
@@ -11319,7 +11312,7 @@ textarea.form-control-lg {
 }
 
 .chat-output {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border-color: #d0eaf5;
 }
 
