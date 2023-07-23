@@ -11213,7 +11213,15 @@ textarea.form-control-lg {
 }
 
 /* chatbox */
+
+@media (max-width: 768px) {
+  * {
+    padding: 0 !important;
+  }
+}
+
 .chatbox {
+  /* Set the chatbox to be centered on all screen sizes */
   margin: 0 auto;
 }
 
@@ -11269,6 +11277,8 @@ textarea.form-control-lg {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  display: block;
 }
 
 .chat-bubble {
@@ -11313,6 +11323,7 @@ textarea.form-control-lg {
 
 .chat-container {
   background-color: #ffffff;
+  border-color: #d0eaf5;
 }
 
 .user-input {
@@ -11326,6 +11337,14 @@ textarea.form-control-lg {
 .chat-output {
   background-color: #ffffff;
   border-color: #d0eaf5;
+}
+
+/* Media Query for larger devices */
+@media (max-width: 768px) {
+  .chat-container {
+    max-width: 100%;
+    /* Set the width of the chatbox to 100% */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
