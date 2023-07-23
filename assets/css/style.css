@@ -11233,6 +11233,8 @@ textarea.form-control-lg {
   border: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: gray;
+  color: black;
 }
 
 .user-input button {
@@ -11240,20 +11242,20 @@ textarea.form-control-lg {
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: gray;
+  color: black;
   cursor: pointer;
 }
 
 .user-input button:hover {
-  background-color: #0056b3;
+  background-color: darkgray;
 }
 
 .chat-output {
   max-height: 300px; /* Set a fixed height for the chat output container */
   overflow-y: auto;
   padding: 1px;
-  background-color: #ffffff;
+  background-color: gray;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
@@ -11275,13 +11277,13 @@ textarea.form-control-lg {
 }
 
 .user {
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: gray;
+  color: black;
   text-align: right;
 }
 
 .chatbot {
-  background-color: #d0eaf5;
+  background-color: darkgray;
 }
 
 /*# sourceMappingURL=style.css.map */
