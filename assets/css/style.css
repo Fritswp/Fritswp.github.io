@@ -11315,8 +11315,6 @@ textarea.form-control-lg {
   text-align: left;
   /* Center the text within the box */
   justify-content: center;
-  display: flex;
-  align-items: center; /* Vertically center the content */
 }
 
 .user {
