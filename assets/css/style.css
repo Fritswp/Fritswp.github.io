@@ -11252,8 +11252,7 @@ textarea.form-control-lg {
   background-color: #0056b3;
 }
 
- /* chatbox-styles.css */
- .chat-container {
+.chat-container {
   max-width: 800px;
   margin: 50px auto;
   background-color: #f0f0f0;
@@ -11298,7 +11297,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   position: sticky;
   display: none;
 }
@@ -11306,7 +11305,7 @@ textarea.form-control-lg {
 .chat-bubble {
   max-width: 100%;
   margin: 5px;
-  padding: 0px;
+  padding: 5px;
   border-radius: 10px;
   max-height: fit-content;
   overflow-y: auto;
