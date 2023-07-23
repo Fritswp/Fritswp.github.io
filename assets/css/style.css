@@ -11251,8 +11251,7 @@ textarea.form-control-lg {
 }
 
 .user-input button {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  padding: 10px;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
