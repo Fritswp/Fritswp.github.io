@@ -11258,6 +11258,7 @@ body {
 }
 
 .chat-output {
+  flex: 1;
   max-height: 70%;
   overflow-y: auto;
   padding: 1px;
@@ -11269,6 +11270,7 @@ body {
 }
 
 .chat-bubble {
+  flex: 1;
   max-width: 70%;
   margin: 5px;
   padding: 10px;
