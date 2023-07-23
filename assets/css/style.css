@@ -11214,5 +11214,59 @@ textarea.form-control-lg {
 
 /* chatbox-styles.css */
 
+.chat-container {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-msg {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.user-msg {
+  background-color: #efefef;
+  text-align: right;
+}
+
+.ai-msg {
+  background-color: #d0eaf5;
+}
+
+.user-input {
+  display: flex;
+}
+
+.user-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-input button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-input button:hover {
+  background-color: #0056b3;
+}
+
 
 /*# sourceMappingURL=style.css.map */
