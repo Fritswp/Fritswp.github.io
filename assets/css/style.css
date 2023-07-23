@@ -11130,6 +11130,12 @@ textarea.form-control-lg {
   transition-property: all;
 }
 
+/* faq */
+
+.faq {
+  padding: 4rem 0;
+}
+
 
 .get-started {
   padding: 4rem 0;
