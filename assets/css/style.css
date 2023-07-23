@@ -11419,7 +11419,19 @@ textarea.form-control-lg {
 /* TIO - Penguin image */
 
 
-
+@media (max-width: 768px) {
+  .image-box {
+    text-align: center;
+  }
+  .image-container {
+    padding-bottom: 20px; /* Add some bottom padding to create space between image and buttons */
+  }
+  .image-container img {
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+  }
+}
 
 /* Get Started */
 
