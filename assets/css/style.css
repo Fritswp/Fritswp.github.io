@@ -11214,22 +11214,5 @@ textarea.form-control-lg {
 
 /* chatbox-styles.css */
 
-.chat-container {
-  height: 100vh; /* Set the height to 100% of the viewport height */
-  display: flex; /* Use flexbox to center the chatbox */
-  justify-content: center;
-  align-items: center;
-}
-
-.chat-box {
-  max-width: 600px; /* Set a maximum width for the chatbox to prevent it from getting too wide */
-  /* Add any other desired styling */
-}
-
-.user-input-box {
-  width: 100%; /* Set the width to 100% of the parent container (chat-input) */
-  padding: 10px; /* Optional padding to match the chatgpt input style */
-  box-sizing: border-box; /* Include padding in the width calculation */
-}
 
 /*# sourceMappingURL=style.css.map */
