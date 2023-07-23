@@ -11214,12 +11214,6 @@ textarea.form-control-lg {
 
   /* chatbox-styles.css */
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
   .chat-container {
     max-width: 800px;
     margin: 50px auto;
@@ -11229,12 +11223,11 @@ textarea.form-control-lg {
     padding: 20px;
     box-sizing: border-box;
   }
-
+  
   .user-input {
     display: flex;
-  
   }
-
+  
   .user-input input {
     flex: 1;
     padding: 10px;
@@ -11242,7 +11235,7 @@ textarea.form-control-lg {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-
+  
   .user-input button {
     padding: 10px;
     border: none;
@@ -11252,24 +11245,22 @@ textarea.form-control-lg {
     color: #ffffff;
     cursor: pointer;
   }
-
+  
   .user-input button:hover {
     background-color: #0056b3;
   }
-
+  
   .chat-output {
-    max-height:70%;
-    overflow-y: auto;
+    max-height: 70%;
+    overflow-y: auto; /* This is the new line */
     padding: 1px;
     background-color: #ffffff;
-    border-radius: 1x;
+    border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     display: none; /* Initially hide the chat output */
-    display: flex; /* Make the chat-output container a flexbox */
-  flex-direction: column-reverse; /* Reverse the order of chat bubbles to make the latest at the bottom */
-}
-
+  }
+  
   .chat-bubble {
     max-width: 100%;
     margin: 5px;
@@ -11278,17 +11269,15 @@ textarea.form-control-lg {
     max-height: 50px;
     overflow-y: auto;
     overflow: hidden;
-    word-wrap: break-word; /* Wrap long words inside the chat bubble */
   }
-
+  
   .user {
     background-color: #007bff;
     color: #ffffff;
     text-align: right;
   }
-
+  
   .chatbot {
     background-color: #d0eaf5;
   }
-
 /*# sourceMappingURL=style.css.map */
