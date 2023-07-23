@@ -11273,7 +11273,7 @@ textarea.form-control-lg {
 .chat-bubble {
   max-width: 100%;
   margin: 5px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   max-height: fit-content;
   overflow-y: auto;
