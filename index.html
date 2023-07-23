@@ -139,7 +139,7 @@
 <section id="services" class="services">
   <div class="container">
     <div class="row text-center mt-5">
-      <h1 class="display-3 fw-bold text-capitalize">Let's Chatp</h1>
+      <h1 class="display-3 fw-bold text-capitalize">Let's Chat</h1>
     <div class="heading-line"></div>
 
     </div>
@@ -754,8 +754,8 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const getInTouchButton = document.getElementById("tryMeButton");
-    getInTouchButton.addEventListener("click", function () {
+    const tryMeButton = document.getElementById("tryMeButton"); // Corrected the element ID
+    tryMeButton.addEventListener("click", function () { // Corrected the event listener
       const portfolioSection = document.getElementById("services");
       const offsetTop = portfolioSection.getBoundingClientRect().top;
       const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 0;
