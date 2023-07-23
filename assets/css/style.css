@@ -11258,7 +11258,7 @@ body {
 }
 
 .chat-output {
-  max-height: 300px;
+  max-height: 70%;
   overflow-y: auto;
   padding: 10px;
   background-color: #ffffff;
