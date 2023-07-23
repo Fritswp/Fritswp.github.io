@@ -11289,16 +11289,16 @@ textarea.form-control-lg {
 }
 
 .chat-output {
-  max-height: inherit; /* Remove the max-height property */
+  max-height: 300px; /* Set a fixed height for the chat output container */
   overflow-y: auto;
-  padding: 1px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: sticky;
+  display: none;
 }
 
 .chat-bubble {
@@ -11308,18 +11308,19 @@ textarea.form-control-lg {
   border-radius: 10px;
   max-height: fit-content;
   overflow-y: auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
   word-wrap: break-word;
   text-align: left;
   /* Center the text within the box */
-  align-items: center;
+  justify-content: center;
 }
 
 .user {
   background-color: #007bff;
   color: #ffffff;
   text-align: left;
-  /* Center the text within the box */
-  align-items: center;
+  justify-content: center;
 }
 
 .chatbot {
