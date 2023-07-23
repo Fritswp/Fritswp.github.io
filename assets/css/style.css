@@ -11436,6 +11436,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 14px;
+  text-align: center;
 }
 
 #contact .info .email p {
@@ -11461,7 +11462,7 @@ textarea.form-control-lg {
 }
 
 #contact .social-links a:hover {
-  background: #55b03f;
+  background: #92d283;
   color: #fff;
 }
 
@@ -11473,6 +11474,7 @@ textarea.form-control-lg {
   padding: 20px;
   font-weight: 600;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 #contact .form #errormessage {
@@ -11483,6 +11485,7 @@ textarea.form-control-lg {
   padding: 20px;
   font-weight: 600;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 #contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
@@ -11504,6 +11507,7 @@ textarea.form-control-lg {
   padding: 12px 10px;
   line-height: 1;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 
 #contact .form button[type="submit"] {
@@ -11512,10 +11516,15 @@ textarea.form-control-lg {
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
+  text-align: center;
 }
 
 #contact .form button[type="submit"]:hover {
   background: #92d283;
+}
+
+.info {
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Sections
