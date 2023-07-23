@@ -11343,4 +11343,13 @@ textarea.form-control-lg {
   }
 }
 
+/* TIO - Penguin image */
+
+@media (max-width: 768px) {
+  .image-box img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
