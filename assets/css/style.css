@@ -11217,7 +11217,7 @@ textarea.form-control-lg {
 .chat-container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -11302,4 +11302,26 @@ textarea.form-control-lg {
   color: #333;
   background-color: #d0eaf5;
 }
+
+/* Customization */
+
+.chat-container {
+  background-color: #ffffff;
+  border-color: #d0eaf5;
+}
+
+.user-input {
+  background-color: #d0eaf5;
+}
+
+.user-input button {
+  background-color: #007bff;
+}
+
+.chat-output {
+  background-color: #ffffff;
+  border-color: #d0eaf5;
+}
+
+
 /*# sourceMappingURL=style.css.map */
