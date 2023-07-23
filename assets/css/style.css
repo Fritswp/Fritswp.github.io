@@ -11412,6 +11412,7 @@ textarea.form-control-lg {
   color: #71c55d;
 }
 
+
 /* Contact Section
 --------------------------------*/
 #contact {
@@ -11423,10 +11424,9 @@ textarea.form-control-lg {
 }
 
 #contact .info i {
-  font-size: 32px;
-  color: #71c55d;
-  float: left;
-  margin-right: 20px;
+  float: none;
+  margin-right: 0;
+  margin-bottom: 10px;
 }
 
 #contact .info p {
@@ -11515,6 +11515,7 @@ textarea.form-control-lg {
 #contact .form button[type="submit"]:hover {
   background: #92d283;
 }
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
