@@ -76,6 +76,7 @@ body {
   justify-content: space-between;
 }
 
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11073,6 +11074,62 @@ textarea.form-control-lg {
   transition-duration: 1s;
   transition-property: all;
 }
+
+/* port */
+
+.port {
+  padding: 4rem 0;
+}
+.port button {
+  text-transform: capitalize;
+}
+
+.port-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #c685f7;
+}
+.port-box img {
+  width: 100%;
+  height: 100%;
+}
+.port-box .port-info {
+  background-color: rgba(153, 38, 240, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.port-box .port-info .caption {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.port-box .port-info .caption h4 {
+  text-transform: uppercase;
+  display: block;
+}
+.port-box:hover img {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  transition-property: all;
+}
+.port-box:hover .port-info {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 1s;
+  transition-property: all;
+}
+
 
 .get-started {
   padding: 4rem 0;
