@@ -11233,8 +11233,8 @@ textarea.form-control-lg {
 }
 
 .chat-output {
-  max-height: 200px;
-  overflow-y: auto;
+  max-height: 300px; /* Set the preferred max height */
+  /* overflow-y: auto; Remove this line to disable scrolling */
   margin-bottom: 20px;
 }
 
@@ -11274,4 +11274,5 @@ textarea.form-control-lg {
   font-size: 16px;
   cursor: pointer;
 }
+
 /*# sourceMappingURL=style.css.map */
