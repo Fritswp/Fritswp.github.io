@@ -11251,7 +11251,8 @@ textarea.form-control-lg {
 }
 
 .user-input button {
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -11266,7 +11267,6 @@ textarea.form-control-lg {
 
 .chat-output {
   max-height: 300px; /* Set a fixed height for the chat output container */
-  padding: 5px;
   overflow-y: auto;
   background-color: #ffffff;
   border-radius: 10px;
