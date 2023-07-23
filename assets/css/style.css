@@ -11316,6 +11316,10 @@ textarea.form-control-lg {
   text-align: left;
   /* Center the text within the box */
   justify-content: center;
+  /* Center the bubble itself */
+  align-items: center;
+  /* Center the text vertically within the bubble */
+  vertical-align: middle;
 }
 
 .user {
@@ -11328,5 +11332,4 @@ textarea.form-control-lg {
 .chatbot {
   background-color: #d0eaf5;
 }
-
 /*# sourceMappingURL=style.css.map */
