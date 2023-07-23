@@ -11262,14 +11262,14 @@ body {
   overflow-y: auto;
   padding: 1px;
   background-color: #ffffff;
-  border-radius: 1x;
+  border-radius: 11x;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   display: none; /* Initially hide the chat output */
 }
 
 .chat-bubble {
-  max-width: 70%;
+  max-height: 70%;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
