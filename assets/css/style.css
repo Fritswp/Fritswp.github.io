@@ -11214,6 +11214,16 @@ textarea.form-control-lg {
 
 /* chatbox */
 
+@media (min-width: 768px) {
+  .chat-container {
+    max-width: 800px;
+    margin: 50px auto;
+    /* Set the width of the chatbox to 800px */
+    padding: 20px;
+    /* Add padding to the chatbox */
+  }
+}
+
 .chatbox p {
   margin-top: 0;
   margin-bottom: 0;
