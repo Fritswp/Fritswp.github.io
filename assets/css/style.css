@@ -11269,7 +11269,7 @@ body {
 }
 
 .chat-bubble {
-  max-width: 70%;
+  max-width: 100%;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
