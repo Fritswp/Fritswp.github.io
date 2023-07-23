@@ -11214,12 +11214,6 @@ textarea.form-control-lg {
 
 /* chatbox-styles.css */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .chat-container {
   max-width: 800px;
   margin: 50px auto;
@@ -11264,7 +11258,9 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  display: none; /* Initially hide the chat output */
+  display: flex;
+  flex-direction: column; /* Align chat bubbles in a column */
+  align-items: flex-end; /* Align chat bubbles to the right side */
 }
 
 .chat-bubble {
@@ -11272,16 +11268,16 @@ body {
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
+  word-wrap: break-word; /* Wrap long words inside the chat bubble */
+  text-align: center; /* Center the text within the chat bubble */
 }
 
 .user {
   background-color: #007bff;
   color: #ffffff;
-  text-align: right;
 }
 
 .chatbot {
   background-color: #d0eaf5;
 }
-
 /*# sourceMappingURL=style.css.map */
