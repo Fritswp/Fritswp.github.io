@@ -758,7 +758,7 @@
     tryMeButton.addEventListener("click", function () { // Corrected the event listener
       const portfolioSection = document.getElementById("services");
       const offsetTop = portfolioSection.getBoundingClientRect().top;
-      const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 10;
+      const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ -10;
       const scrollPosition = offsetTop + window.scrollY - navbarHeight;
 
       window.scrollTo({
