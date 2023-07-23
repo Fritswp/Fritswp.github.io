@@ -11258,19 +11258,18 @@ body {
 }
 
 .chat-output {
-  flex: 1;
-  max-height: 70%;
+  max-height: 100px;
   overflow-y: auto;
-  padding: 1px;
+  padding: 10px;
   background-color: #ffffff;
-  border-radius: 11x;
+  border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
-  display: none; /* Initially hide the chat output */
+  display: block;
 }
 
+
 .chat-bubble {
-  flex: 1;
   max-width: 70%;
   margin: 5px;
   padding: 10px;
