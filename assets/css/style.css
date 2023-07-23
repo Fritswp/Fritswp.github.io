@@ -67,6 +67,14 @@ body {
   overflow-x: hidden;
 }
 
+.btn-rounded {
+  float: right;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 hr {
   margin: 1rem 0;
