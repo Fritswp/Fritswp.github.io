@@ -11266,6 +11266,7 @@ textarea.form-control-lg {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     display: none; /* Initially hide the chat output */
+    overflow: scroll;
   }
 
   .chat-bubble {
