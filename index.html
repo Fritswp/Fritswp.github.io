@@ -165,7 +165,7 @@
                          START SECTION 5 - THE Chatbot  
 //////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<section id="chatbot">
+
 <div class="chat-container chatbox"> <!-- Add the "chatbox" class here -->
   <div class="chat-output" id="chat-output">
     <!-- Chat messages will be dynamically added here -->
@@ -175,7 +175,7 @@
     <button onclick="sendUserMessage()">Send</button>
   </div>
 </div>
-</section>
+
 
     
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////
@@ -749,7 +749,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     const getInTouchButton = document.getElementById("tryMeButton");
     getInTouchButton.addEventListener("click", function () {
-      const portfolioSection = document.getElementById("chatbot");
+      const portfolioSection = document.getElementById("services");
       const offsetTop = portfolioSection.getBoundingClientRect().top;
       const navbarHeight = /* Replace this value with the height of your fixed navbar, if any */ 0;
       const scrollPosition = offsetTop + window.scrollY - navbarHeight;
