@@ -11425,9 +11425,15 @@ textarea.form-control-lg {
 #contact .info i {
   font-size: 32px;
   color: #71c55d;
-  float: left;
+  float: none;
   margin-right: 0;
   margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+#contact .info::before {
+  content: "";
+  display: block;
   padding-left: 10px;
 }
 
