@@ -11515,6 +11515,55 @@ textarea.form-control-lg {
 }
 
 
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+.padd-section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+@media (max-width: 992px) {
+  .padd-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.section-title {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+.section-title h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.section-title .separator {
+  margin: 0;
+}
+
+.separator {
+  color: #626262;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+
+
 
 
 
