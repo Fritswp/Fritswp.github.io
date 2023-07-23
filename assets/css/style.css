@@ -11270,14 +11270,13 @@ body {
 }
 
 .chat-bubble {
-  max-width: 70%;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
   word-wrap: break-word; /* Wrap long words inside the chat bubble */
   text-align: left; /* Align the text to the left within the chat bubble */
-  display: flex; /* Enable flexbox for vertical centering */
-  align-items: center; /* Vertically center the content */
+  display: inline-block; /* Make the chat bubble adjust its size based on content */
+  background-color: #d0eaf5; /* Move background color from .chatbot to .chat-bubble */
 }
 
 .user {
@@ -11288,6 +11287,9 @@ body {
 
 .chatbot {
   background-color: #d0eaf5;
+  color: #000000; /* Update the text color for better visibility */
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
