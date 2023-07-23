@@ -77,7 +77,9 @@
       <div class="col-md-6 intros text-end">
         <div class="image-box">
           <!-- Replace the video illustration with the TIO.png image -->
-          <img src="images\arts\TIO.png" alt="TIO illustration" class="img-fluid">
+          <div class="image-container">
+            <img src="images\arts\TIO.png" alt="TIO illustration" class="img-fluid">
+          </div>
         </div>
       </div>
     </div>
@@ -91,12 +93,13 @@
     .image-box {
       text-align: center;
     }
-    .image-box img {
-      display: inline-block;
+    .image-container {
+      padding-bottom: 20px; /* Add some bottom padding to create space between image and buttons */
+    }
+    .image-container img {
       max-width: 50%;
       height: auto;
-      width: 50%;
-      margin-bottom: 50px; /* Add some bottom margin to create space between image and buttons */
+      width: 100%;
     }
   }
 </style>
