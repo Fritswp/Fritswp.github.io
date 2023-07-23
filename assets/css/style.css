@@ -11268,7 +11268,7 @@ textarea.form-control-lg {
 .chat-bubble {
   max-width: 100%;
   margin: 5px;
-  padding: 5px 5px 2px 5px;
+  padding: 5px;
   border-radius: 10px;
   max-height: fit-content;
   overflow-y: auto;
@@ -11277,6 +11277,10 @@ textarea.form-control-lg {
   word-wrap: break-word;
   text-align: left;
   justify-content: center;
+   /* Override default margin for p elements */
+   .p {
+    margin: 0;
+  }
 }
 
 .user {
