@@ -11414,22 +11414,18 @@ textarea.form-control-lg {
 
 /* Contact Section
 --------------------------------*/
-
 #contact {
   background: #fff;
 }
 
 #contact .info {
   color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
 }
 
 #contact .info i {
   font-size: 32px;
   color: #71c55d;
+  float: left;
   margin-right: 0;
   margin-bottom: 10px;
   padding-left: 10px;
@@ -11440,6 +11436,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 14px;
+  text-align: center;
 }
 
 #contact .info .email p {
@@ -11526,6 +11523,9 @@ textarea.form-control-lg {
   background: #92d283;
 }
 
+.info {
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
