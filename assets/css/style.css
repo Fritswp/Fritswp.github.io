@@ -11625,7 +11625,7 @@ textarea.form-control-lg {
 --------------------------------------------------------------*/
 .padd-section {
   padding-bottom: 80px;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 @media (max-width: 992px) {
