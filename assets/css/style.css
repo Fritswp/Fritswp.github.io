@@ -11214,11 +11214,7 @@ textarea.form-control-lg {
 
 /* chatbox */
 
-@media (max-width: 768px) {
-  * {
-    padding: 0 !important;
-  }
-}
+
 
 .chatbox {
   /* Set the chatbox to be centered on all screen sizes */
