@@ -11213,45 +11213,6 @@ textarea.form-control-lg {
 }
 
 
-/* chatbox-styles.css */
-.chat-container {
-  max-width: 800px;
-  margin: 50px auto;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.user-input {
-  display: flex;
-}
-
-.user-input input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  background-color: #ffffff;
-  color: #212529;
-}
-
-.user-input button {
-  padding: 10px;
-  border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: #007BFF;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.user-input button:hover {
-  background-color: #0056b3;
-}
-
 .chat-container {
   max-width: 800px;
   margin: 50px auto;
@@ -11272,6 +11233,8 @@ textarea.form-control-lg {
   border: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: #ffffff;
+  color: #212529;
 }
 
 .user-input button {
@@ -11298,14 +11261,13 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   position: sticky;
-  display: none;
+  display: block;
 }
 
 .chat-bubble {
   max-width: 100%;
   margin: 5px;
   padding: 5px;
-  padding-bottom: -5px;
   border-radius: 10px;
   max-height: fit-content;
   overflow-y: auto;
@@ -11325,6 +11287,18 @@ textarea.form-control-lg {
 
 .chatbot {
   background-color: #d0eaf5;
+  color: #333;
+  text-align: left;
+  justify-content: center;
 }
 
+.chat-bubble.user {
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.chat-bubble.chatbot {
+  color: #333;
+  background-color: #d0eaf5;
+}
 /*# sourceMappingURL=style.css.map */
