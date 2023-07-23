@@ -763,9 +763,11 @@
       const paddingTop = 20;
       const scrollPosition = offsetTop + window.scrollY - navbarHeight + paddingTop;
 
-      window.scrollTo({
-        top: scrollPosition,
-        behavior: "smooth",
+      requestAnimationFrame(() => {
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: "smooth",
+        });
       });
     });
   });
