@@ -7426,6 +7426,7 @@ textarea.form-control-lg {
   border-radius: 50rem !important;
 }
 
+
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
   border-top-right-radius: 0.25rem !important;
@@ -10775,7 +10776,20 @@ textarea.form-control-lg {
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
   display: block;
+  
 }
+
+.btn-regular {
+  position: relative;
+  padding: 0.8375rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+  display: block;
+  
+}
+
 .btn-rounded span {
   position: absolute;
   background-color: #9926f0;
