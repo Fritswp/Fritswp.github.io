@@ -11197,7 +11197,7 @@ textarea.form-control-lg {
 
 .footer {
   padding-top: 1rem;
-  background-color: #2a2c30;
+  background-color: #151414;
 }
 
 /* contact */
@@ -11537,9 +11537,7 @@ textarea.form-control-lg {
 .footers {
   background: #2a2c30;
   padding-top: 50px;
-  text-align: right; /* Add this line to align the heading to the right */
 }
-
 
 .footers .footers-logo .navbar-brand {
   color: #fff;
