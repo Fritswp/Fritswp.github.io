@@ -11198,6 +11198,8 @@ textarea.form-control-lg {
 }
 
 /* contact */
+
+/* contact */
 .contact-box {
   padding: 4rem 0;
 }
@@ -11217,6 +11219,10 @@ textarea.form-control-lg {
 }
 
 /* Contact Info styles */
+.contact-box__info {
+  padding: 1rem; /* Add padding to create space between the boxes */
+}
+
 .contact-box__title {
   color: #fff;
   font-size: 1rem;
@@ -11243,6 +11249,9 @@ textarea.form-control-lg {
     font-size: 1rem;
   }
 }
+
+
+
 /* footer */
 
 .footer-sm a {
