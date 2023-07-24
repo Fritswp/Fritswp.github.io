@@ -11200,7 +11200,7 @@ textarea.form-control-lg {
 /* contact */
 
 .contact-box {
-  position: relative;
+  padding: 4rem 0;
 }
 .contact-box__icon {
   width: 2rem;
