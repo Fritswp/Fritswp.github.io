@@ -11364,7 +11364,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: sticky;
   display: none;
 }
