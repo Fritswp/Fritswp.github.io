@@ -11199,59 +11199,57 @@ textarea.form-control-lg {
 
 /* contact */
 
-/* contact */
-.contact-box {
-  padding: 4rem 0;
+.contact-boxes {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Icon styles */
+.contact-box {
+  padding: 4rem 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .contact-box__icon {
   width: 2rem;
   stroke: #9926f0;
   padding-top: 0.5rem;
 }
 
-/* Responsive icon size */
 @media (min-width: 576px) {
   .contact-box__icon {
     width: 4rem;
   }
 }
 
-/* Contact Info styles */
 .contact-box__info {
-  padding: 12rem; /* Add padding to create space between the boxes */
-}
-
-.contact-box__title {
-  color: #fff;
-  font-size: 1rem;
+  padding: 0.4rem;
   font-weight: 600;
-  margin-bottom: 0.5rem; /* Add some vertical spacing below the title */
 }
 
-/* Responsive title font size */
+.contact-box__info--title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 @media (min-width: 576px) {
-  .contact-box__title {
+  .contact-box__info--title {
     font-size: 1.4rem;
   }
 }
 
-.contact-box__subtitle {
-  color: #6c757d;
+.contact-box__info--subtitle {
   font-size: 0.8rem;
-  margin-bottom: 1rem; /* Add some vertical spacing below the subtitle */
+  color: #6c757d;
+  text-decoration: none;
 }
 
-/* Responsive subtitle font size */
 @media (min-width: 576px) {
-  .contact-box__subtitle {
+  .contact-box__info--subtitle {
     font-size: 1rem;
   }
 }
-
-
-
 /* footer */
 
 .footer-sm a {
