@@ -11198,45 +11198,52 @@ textarea.form-control-lg {
 }
 
 /* contact */
-
 .contact-box {
   padding: 4rem 0;
 }
+
+/* Icon styles */
 .contact-box__icon {
   width: 2rem;
   stroke: #9926f0;
   padding-top: 0.5rem;
 }
+
+/* Responsive icon size */
 @media (min-width: 576px) {
   .contact-box__icon {
     width: 4rem;
   }
 }
-.contact-box__info {
-  padding: 0.4rem;
-  font-weight: 600;
-}
-.contact-box__info--title {
+
+/* Contact Info styles */
+.contact-box__title {
   color: #fff;
-  text-decoration: none;
   font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Add some vertical spacing below the title */
 }
+
+/* Responsive title font size */
 @media (min-width: 576px) {
-  .contact-box__info--title {
+  .contact-box__title {
     font-size: 1.4rem;
   }
 }
-.contact-box__info--subtitle {
-  font-size: 0.8rem;
+
+.contact-box__subtitle {
   color: #6c757d;
-  text-decoration: none;
+  font-size: 0.8rem;
+  margin-bottom: 1rem; /* Add some vertical spacing below the subtitle */
 }
+
+/* Responsive subtitle font size */
 @media (min-width: 576px) {
-  .contact-box__info--subtitle {
+  .contact-box__subtitle {
     font-size: 1rem;
   }
 }
-
+/* footer */
 
 .footer-sm a {
   color: #fff;
