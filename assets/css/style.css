@@ -10990,6 +10990,10 @@ textarea.form-control-lg {
   max-width: 100%;
 }
 
+.testimonials-scroll {
+  padding-top: 4rem; /* Adjust the value to your preference */
+}
+
 .testimonials {
   position: relative;
   padding: 0;
