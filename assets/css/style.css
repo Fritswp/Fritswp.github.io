@@ -11537,7 +11537,9 @@ textarea.form-control-lg {
 .footers {
   background: #2a2c30;
   padding-top: 50px;
+  text-align: right; /* Add this line to align the heading to the right */
 }
+
 
 .footers .footers-logo .navbar-brand {
   color: #fff;
@@ -11563,8 +11565,12 @@ textarea.form-control-lg {
   padding-bottom: 20px;
 }
 
-.footers .list-menu ul li {
-  width: 33.33%;
+.footers .list-menu ul li a {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 5px;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 
 .footers .copyrights {
@@ -11587,6 +11593,7 @@ textarea.form-control-lg {
   letter-spacing: 0;
   color: #71c55d;
 }
+
 
 
 
