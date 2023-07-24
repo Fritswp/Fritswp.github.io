@@ -10823,6 +10823,7 @@ textarea.form-control-lg {
   border: 0.1rem solid rgba(255, 255, 255, 0.);
   background-color: #fff;
   display: block;
+  text-align: center;
   
 }
 
