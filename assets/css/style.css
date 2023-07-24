@@ -10990,7 +10990,9 @@ textarea.form-control-lg {
   max-width: 100%;
 }
 
+.testimonials-scroll {
 
+}
 
 .testimonials {
   position: relative;
@@ -11040,7 +11042,7 @@ textarea.form-control-lg {
 
 .portfolio {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 .portfolio button {
   text-transform: capitalize;
@@ -11150,7 +11152,8 @@ textarea.form-control-lg {
 /* faq */
 
 .faq {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .get-started {
