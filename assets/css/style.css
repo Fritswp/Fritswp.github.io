@@ -11197,7 +11197,7 @@ textarea.form-control-lg {
 
 .footer {
   padding-top: 1rem;
-  background-color: #151414;
+  background-color: #2a2c30;
 }
 
 /* contact */
@@ -11243,7 +11243,7 @@ textarea.form-control-lg {
 /* footer */
 
 .footer-sm a {
-  color: #fff;
+  color: #2a2c30;;
 }
 .footer-sm a i {
   font-size: 1rem;
@@ -11255,7 +11255,7 @@ textarea.form-control-lg {
   }
 }
 .footer-sm a:hover {
-  color: #9926f0;
+  color: #2a2c30;
 }
 
 .campany-list {
@@ -11563,12 +11563,8 @@ textarea.form-control-lg {
   padding-bottom: 20px;
 }
 
-.footers .list-menu ul li a {
-  color: #fff;
-  font-size: 12px;
-  padding-left: 5px;
-  text-decoration: none;
-  letter-spacing: 0;
+.footers .list-menu ul li {
+  width: 33.33%;
 }
 
 .footers .copyrights {
@@ -11591,7 +11587,6 @@ textarea.form-control-lg {
   letter-spacing: 0;
   color: #71c55d;
 }
-
 
 
 
