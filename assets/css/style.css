@@ -11531,6 +11531,66 @@ textarea.form-control-lg {
   }
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footers {
+  background: #2a2c30;
+  padding-top: 50px;
+}
+
+.footers .footers-logo .navbar-brand {
+  color: #fff;
+  display: inline-block;
+  float: none;
+  font-family: "Philosopher", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0.2em;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.footers .footers-logo p {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.footers .list-menu > h4 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.footers .list-menu ul li a {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 5px;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.footers .copyrights {
+  background: #fff;
+  margin-top: 50px;
+  text-align: center;
+  padding: 25px;
+}
+
+.footers .copyrights p, .footers .copyrights .credits {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.footers .copyrights p a, .footers .copyrights .credits a {
+  letter-spacing: 0;
+  color: #71c55d;
+}
 
 
 
