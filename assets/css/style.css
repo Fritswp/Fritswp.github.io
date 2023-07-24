@@ -11040,6 +11040,7 @@ textarea.form-control-lg {
 
 .portfolio {
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .portfolio button {
   text-transform: capitalize;
