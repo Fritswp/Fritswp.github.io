@@ -11462,7 +11462,7 @@ textarea.form-control-lg {
 
 #get-started .feature-block {
   background: #fff none repeat scroll 0 0;
-  padding: 30px 20px;
+  padding: 30px 20px 0; /* Adjust the padding as needed */
   max-width: 500px;
   transition: all 0.5s ease-in-out 0s;
 }
