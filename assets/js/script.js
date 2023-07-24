@@ -15,22 +15,22 @@ function sendUserMessage() {
     document.getElementById("chat-output").style.display = "block";
     isFirstUserMessageSent = true;
   }
-  
+
   // Create user message bubble
   const chatOutput = document.getElementById("chat-output");
   const userMsgDiv = document.createElement("div");
   userMsgDiv.className = "chat-bubble user";
   userMsgDiv.innerHTML = `<p>You: ${userInput}</p>`;
-  
+
   // Create chatbot response bubble
   const chatbotResponse = getChatbotResponse(userInput);
   const chatbotMsgDiv = document.createElement("div");
   chatbotMsgDiv.className = "chat-bubble chatbot";
   chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${chatbotResponse}</p>`;
 
-  // Insert the new chat messages at the top of the chat-output
-  chatOutput.insertBefore(chatbotMsgDiv, chatOutput.firstChild);
-  chatOutput.insertBefore(userMsgDiv, chatOutput.firstChild);
+  // Append the new chat messages to the end of the chat-output
+  chatOutput.appendChild(userMsgDiv);
+  chatOutput.appendChild(chatbotMsgDiv);
 
   // Scroll to the bottom of the chat output to show the latest message
   chatOutput.scrollTop = chatOutput.scrollHeight;
