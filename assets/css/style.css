@@ -11152,11 +11152,10 @@ textarea.form-control-lg {
   padding: 4rem 0;
 }
 
-
 .get-started {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #e9ecef;
+  background-color: #e9ecef !important;
 }
 
 .cta-info {
