@@ -11220,7 +11220,7 @@ textarea.form-control-lg {
 
 /* Contact Info styles */
 .contact-box__info {
-  padding: 1rem; /* Add padding to create space between the boxes */
+  padding: 12rem; /* Add padding to create space between the boxes */
 }
 
 .contact-box__title {
