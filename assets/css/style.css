@@ -11442,13 +11442,39 @@ textarea.form-control-lg {
 /* TIO - Penguin image */
 @media (max-width: 768px) {
   #tryMeButton {
-    font-size: 14px; /* Adjust the font size */
-    padding: 8px 25px 8px 15px; /* Adjust the padding for the button */
+    font-size: 14px; 
+    padding: 8px 25px 8px 15px;
     align-items: inline-flex;
     justify-content: center;
+    text-align: left;
     width: 100%;
-    height: 100%;
+    height: 50px;
   }
+
+
+
+.btn-rounded span {
+  position: absolute;
+  background-color: #9926f0;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  text-align: center;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 
