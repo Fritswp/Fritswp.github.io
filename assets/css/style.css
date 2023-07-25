@@ -11440,21 +11440,18 @@ textarea.form-control-lg {
 }
 
 /* TIO - Penguin image */
-
-
 @media (max-width: 768px) {
-  .image-box {
-    text-align: right;
-  }
-  .image-container {
-    padding-bottom: 20px; /* Add some bottom padding to create space between image and buttons */
-  }
-  .image-container img {
-    max-width: 50%;
-    height: auto;
+  #tryMeButton {
+    font-size: 14px; /* Adjust the font size */
+    padding: 8px 25px 8px 15px; /* Adjust the padding for the button */
+    align-items: inline-flex;
+    justify-content: center;
     width: 100%;
+    height: 100%;
   }
 }
+
+
 
 /* Get Started */
 
@@ -11572,7 +11569,6 @@ textarea.form-control-lg {
 
 .footers .copyrights {
   background: #fff;
-  margin-top: 50px;
   text-align: center;
   padding: 25px;
 }
@@ -11594,7 +11590,7 @@ textarea.form-control-lg {
 /* social links */
 
 .social-links {
-  padding-bottom: 10px;
+  padding-bottom: 1px;
   
 }
 
