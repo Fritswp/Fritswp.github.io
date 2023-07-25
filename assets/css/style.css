@@ -11444,7 +11444,7 @@ textarea.form-control-lg {
 
 @media (max-width: 768px) {
   .image-box {
-    text-align: center;
+    text-align: right;
   }
   .image-container {
     padding-bottom: 20px; /* Add some bottom padding to create space between image and buttons */
@@ -11536,7 +11536,7 @@ textarea.form-control-lg {
 --------------------------------------------------------------*/
 .footers {
   background: #2a2c30;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .footers .footers-logo .navbar-brand {
@@ -11560,7 +11560,6 @@ textarea.form-control-lg {
 
 .footers .list-menu > h4 {
   color: #fff;
-  padding-bottom: 20px;
 }
 
 .footers .list-menu ul li a {
@@ -11595,7 +11594,8 @@ textarea.form-control-lg {
 /* social links */
 
 .social-links {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
+  
 }
 
 .social-links a {
@@ -11603,7 +11603,6 @@ textarea.form-control-lg {
   display: inline-block;
   color: #fff;
   line-height: 1;
-  padding-top: 10px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
