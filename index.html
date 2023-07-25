@@ -23,7 +23,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////-->
 <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="">
+      <a class="navbar-brand" href="https://www.TioAssist.io/">
         <img src="images/logo.webp" alt="logo image">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -175,7 +175,7 @@
     <!-- Chat messages will be dynamically added here -->
   </div>
   <div class="user-input">
-    <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="handleEnterKey(event)">
+    <input type="text" id="user-input" placeholder="Ask your question here..." onkeydown="handleEnterKey(event)">
     <button onclick="sendUserMessage()">Send</button>
   </div>
 </div>
@@ -373,10 +373,14 @@
           </div>     
         </div>
         <div class="text-center">
-          <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        </button>
-        <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        </button>
+          <button class="btn btn-outline-light" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" aria-label="Previous Slide">
+            <i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>
+          </button>
+                  </button>
+                  <button class="btn btn-outline-light" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" aria-label="Next Slide">
+                    <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                  </button>
+                          </button>
         </div>
       </div>
     </div>
@@ -628,9 +632,10 @@
 </footer>
 
 <!-- BACK TO TOP BUTTON  -->
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
-  <i class="fas fa-chevron-up"></i>
+<a href="#" class="shadow btn-primary rounded-circle back-to-top" aria-label="Back to Top">
+  <i class="fas fa-chevron-up" aria-hidden="true"></i>
 </a>
+
 
 
   <!--==========================
@@ -650,12 +655,13 @@
 
 
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
           </div>
+          
         </div>
 
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
