@@ -61,6 +61,8 @@ function typeChatbotResponse(response, chatbotMsgDiv, index = 0) {
 function handleEnterKey(event) {
   if (event.key === "Enter") {
     sendUserMessage();
+    // Call the function to show the experts section below the chatbot section
+    showExpertsSectionBelowChatbot();
   }
 }
 
@@ -168,7 +170,8 @@ function getRandomExperts() {
           <img src="${expert.picture}" alt="${expert.name}" class="img-fluid expert-picture">
           <h4 class="mt-4">${expert.name}</h4>
           <p>${expert.profession}</p>
-          <a href="#">View Profile</a>
+          <p>Expertise: ${expert.expertise}</p>
+          <a href="#">View Profile <i class="fas fa-comment" aria-hidden="true"></i></a>
         </div>
       </div>
     `;
@@ -178,3 +181,26 @@ function getRandomExperts() {
 
 // Call the function to generate random experts when the page loads
 window.addEventListener("load", getRandomExperts);
+
+// Add a function to show the experts section below the chatbot section
+function showExpertsSectionBelowChatbot() {
+  // Get the chatbot section and experts section elements
+  const chatbotSection = document.querySelector(".chatbox");
+  const expertsSection = document.getElementById("experts");
+
+  // Show the experts section
+  expertsSection.style.display = "block";
+  
+
+  // Position the experts section below the chatbot section
+  expertsSection.style.top = chatbotSection.offsetHeight + "px";
+}
+
+// Function to handle user input when they press "Enter" or click the send button
+function handleEnterOrSendClick(event) {
+  if (event.key === "Enter" || event.type === "click") {
+    sendUserMessage();
+    // Call the function to show the experts section below the chatbot section
+    showExpertsSectionBelowChatbot();
+  }
+}

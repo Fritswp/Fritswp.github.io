@@ -187,17 +187,21 @@
                          START SECTION 5 - Experts
 //////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<section id="experts" class="experts padd-section text-center wow fadeInUp">
+<section id="experts" class="experts padd-section text-center wow fadeInUp" style="display: none;">
   <div class="container">
     <div class="row text-center">
       <h4 class="fw-bold lead mb-3">Experts who can help you</h4>
-      <div class="heading-line mb-5"></div>
+      <div class="heading-line"></div>
+      <p class="lh-lg">Discover knowledgeable professionals across various fields ready to assist with your questions and challenges.</p>
     </div>
-    <div class="row" id="experts-tiles">
+    </div>
+    <div class="row justify-content-center" id="experts-tiles">
       <!-- Expert tiles will be dynamically added here -->
     </div>
   </div>
 </section>
+
+
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////
                              START SECTION 6 - THE Hover sections 
@@ -819,25 +823,10 @@
     const lowerCaseInput = userInput.toLowerCase();
     return responses[lowerCaseInput] || responses["default"];
   }
-</script>
-
-   
-    <script src="assets/vendors/js/glightbox.min.js"></script>
-
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-        'touchNavigation': true,
-        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-        'type': 'video',
-        'source': 'youtube', //vimeo, youtube or local
-        'width': 900,
-        'autoPlayVideos': 'true',
 
         
-});
-
     </script>
-      <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    
      <script src="assets/js/bootstrap.bundle.min.js"></script>
      <script src="assets\js\script.js"></script>
 </body>
