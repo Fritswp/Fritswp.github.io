@@ -87,65 +87,64 @@ const expertsData = [
     name: "John Doe",
     profession: "Software Engineer",
     expertise: "Python",
-    picture: "images/Experts/John Doe.jpg", 
+    picture: "images/Experts/John_Doe.jpg",
   },
   {
     name: "Jane Smith",
     profession: "Data Scientist",
     expertise: "Machine Learning",
-    picture: "images/Experts/Jane Smith.webp",
+    picture: "images/Experts/Jane_Smith.webp",
   },
   {
     name: "Michael Johnson",
     profession: "Baker",
     expertise: "Pastry",
-    picture: "images/Experts/Micheal Johnson.webp",
+    picture: "images/Experts/Michael_Johnson.webp",
   },
   {
     name: "Emily Williams",
     profession: "Digital Marketer",
     expertise: "Social Media Marketing",
-    picture: "images/Experts/Emily Williams.webp",
+    picture: "images/Experts/Emily_Williams.webp",
   },
   {
     name: "Robert Lee",
     profession: "Mechanic",
     expertise: "Automotive Repair",
-    picture: "path-to-picture-5.jpg",
+    picture: "images/Experts/Robert_Lee.jpg",
   },
   {
     name: "Sarah Adams",
     profession: "Gardener",
     expertise: "Landscape Design",
-    picture: "path-to-picture-6.jpg",
+    picture: "images/Experts/Sarah_Adams.jpg",
   },
   {
     name: "David Thompson",
     profession: "Musician",
     expertise: "Piano",
-    picture: "path-to-picture-7.jpg",
+    picture: "images/Experts/David_Thompson.jpg",
   },
   {
     name: "Jennifer Brown",
     profession: "Chef",
     expertise: "French Cuisine",
-    picture: "path-to-picture-8.jpg",
+    picture: "images/Experts/Jennifer_Brown.jpg",
   },
   {
     name: "William Green",
     profession: "Photographer",
     expertise: "Portrait Photography",
-    picture: "path-to-picture-9.jpg",
+    picture: "images/Experts/William_Green.jpg",
   },
   {
     name: "Linda Martinez",
     profession: "Artist",
     expertise: "Oil Painting",
-    picture: "path-to-picture-10.jpg",
+    picture: "images/Experts/Linda_Martinez.jpg",
   },
   // Add more experts here as needed
 ];
-
 function getRandomExperts() {
   const numberOfExpertsToShow = 3; // You can adjust this number as needed
 
