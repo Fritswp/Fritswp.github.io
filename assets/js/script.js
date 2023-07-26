@@ -87,7 +87,7 @@ const expertsData = [
     name: "John Doe",
     profession: "Software Engineer",
     expertise: "Python",
-    picture: "images/Experts/John_Doe.jpg",
+    picture: "images/Experts/John_Doe.webp",
   },
   {
     name: "Jane Smith",
@@ -111,37 +111,37 @@ const expertsData = [
     name: "Robert Lee",
     profession: "Mechanic",
     expertise: "Automotive Repair",
-    picture: "images/Experts/Robert Lee.jpg",
+    picture: "images/Experts/Robert Lee.webp",
   },
   {
     name: "Sarah Adams",
     profession: "Gardener",
     expertise: "Landscape Design",
-    picture: "images/Experts/Sarah Adams.jpg",
+    picture: "images/Experts/Sarah Adams.webp",
   },
   {
     name: "David Thompson",
     profession: "Musician",
     expertise: "Piano",
-    picture: "images/Experts/David Thompson.jpg",
+    picture: "images/Experts/David Thompson.webp",
   },
   {
     name: "Jennifer Brown",
     profession: "Chef",
     expertise: "French Cuisine",
-    picture: "images/Experts/Jennifer Brown.jpg",
+    picture: "images/Experts/Jennifer Brown.webp",
   },
   {
     name: "William Green",
     profession: "Photographer",
     expertise: "Portrait Photography",
-    picture: "images/Experts/William Green.jpg",
+    picture: "images/Experts/William Green.webp",
   },
   {
     name: "Linda Martinez",
     profession: "Artist",
     expertise: "Oil Painting",
-    picture: "images/Experts/Linda Martinez.jpg",
+    picture: "images/Experts/Linda Martinez.webp",
   },
   // Add more experts here as needed
 ];
