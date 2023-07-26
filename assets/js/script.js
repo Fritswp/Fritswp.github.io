@@ -1,8 +1,8 @@
-window.addEventListener('beforeunload', function() {
-  // Scroll to the top of the page
-  window.scrollTo(0, 0);
-});
+history.scrollRestoration = "manual";
 
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
 
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
