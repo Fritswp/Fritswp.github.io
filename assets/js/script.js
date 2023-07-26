@@ -195,12 +195,14 @@ function showExpertsSectionBelowChatbot() {
   // Position the experts section below the chatbot section
   expertsSection.style.top = chatbotSection.offsetHeight + "px";
     // Scroll to the experts section
+    if (!isMobileDevice()) {
     const scrollOptions = {
       top: expertsSection.offsetTop - 160, // Adjust the value to stop a bit earlier
       behavior: "smooth",
     };
     window.scrollTo(scrollOptions);
   }
+}
   
 
 
