@@ -1,9 +1,8 @@
-
-
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
+let hasScrolledToExperts = false;
 
-function sendUserMessage() {
+function sendUserMessage(scrollToExperts = true) {
   const userInput = document.getElementById("user-input").value;
   if (userInput.trim() === "") {
     return; // If the user input is empty, do nothing
@@ -35,8 +34,29 @@ function sendUserMessage() {
     const chatbotResponse = getChatbotResponse(userInput);
     displayChatbotResponse(chatbotResponse);
   }, 400); // Delay before the chatbot starts typing (milliseconds)
+
+  // Scroll to the experts section if specified
+  if (scrollToExperts) {
+    showExpertsSectionBelowChatbot();
+  }
 }
 
+function handleEnterKey(event) {
+  if (event.key === "Enter") {
+    sendUserMessage();
+  }
+}
+
+// Add a new event listener for the chatbox click
+document.getElementById("user-input").addEventListener("click", function () {
+  // Set scrollToExperts to false when the user clicks on the chatbox
+  handleEnterKey({ key: "Click" });
+});
+
+// Existing event listener for the "Enter" key press
+document.getElementById("user-input").addEventListener("keydown", handleEnterKey);
+
+// Rest of the code...
 function displayChatbotResponse(response) {
   const chatOutput = document.getElementById("chat-output");
   const chatbotMsgDiv = document.createElement("div");
@@ -44,19 +64,22 @@ function displayChatbotResponse(response) {
   chatOutput.appendChild(chatbotMsgDiv);
 
   // Type the chatbot response text with the typing effect
-  typeChatbotResponse(response, chatbotMsgDiv);
+  typeChatbotResponse(response, chatbotMsgDiv, chatOutput);
 }
 
-function typeChatbotResponse(response, chatbotMsgDiv, index = 0) {
+function typeChatbotResponse(response, chatbotMsgDiv, chatOutput, index = 0) {
   if (index < response.length) {
     chatbotMsgDiv.textContent += response.charAt(index);
     index++;
-    setTimeout(() => typeChatbotResponse(response, chatbotMsgDiv, index), 22); // Adjust typing speed (milliseconds)
+    setTimeout(() => typeChatbotResponse(response, chatbotMsgDiv, chatOutput, index), 22); // Adjust typing speed (milliseconds)
   } else {
     chatbotMsgDiv.classList.remove("typing"); // Remove the "typing" class when typing is complete
     chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${response}</p>`; // Replace the text content with the complete response
     // Scroll to the bottom of the chat output to show the latest message
     chatOutput.scrollTop = chatOutput.scrollHeight;
+
+    // Call the function to show the experts section below the chatbot section
+    showExpertsSectionBelowChatbot();
   }
 }
 
@@ -83,6 +106,8 @@ function getChatbotResponse(userInput) {
   const lowerCaseInput = userInput.toLowerCase();
   return responses[lowerCaseInput] || responses["default"];
 }
+
+
 
 /* experts */
 
@@ -184,6 +209,10 @@ function getRandomExperts() {
 // Call the function to generate random experts when the page loads
 window.addEventListener("load", getRandomExperts);
 
+function isMobileDevice() {
+  return window.innerWidth < 768; // Adjust the threshold as needed (768px is a common breakpoint for mobile devices)
+}
+
 // Add a function to show the experts section below the chatbot section
 function showExpertsSectionBelowChatbot() {
   // Get the chatbot section and experts section elements
@@ -192,31 +221,24 @@ function showExpertsSectionBelowChatbot() {
 
   // Show the experts section
   expertsSection.style.display = "block";
-  
 
   // Position the experts section below the chatbot section
   expertsSection.style.top = chatbotSection.offsetHeight + "px";
-    // Scroll to the experts section
+
+  // Scroll to the experts section if not scrolled before
+  if (!hasScrolledToExperts) {
     const scrollOptions = {
-      top: expertsSection.offsetTop - 150, // Adjust the value to stop a bit earlier
+      top: expertsSection.offsetTop - 230, // Adjust the value to stop a bit earlier
       behavior: "smooth",
     };
     window.scrollTo(scrollOptions);
+    // Set the flag to true after scrolling once
+    hasScrolledToExperts = true;
   }
-  
-
-
-
-// Function to handle user input when they press "Enter" or click the send button
-if (!isMobileDevice()) {
-  const scrollOptions = {
-    top: expertsSection.offsetTop - 150, // Adjust the value to stop a bit earlier
-    behavior: "smooth",
-  };
-  window.scrollTo(scrollOptions);
 }
+    
+  history.scrollRestoration = "manual";
 
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+  $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+  });

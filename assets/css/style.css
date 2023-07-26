@@ -71,6 +71,16 @@ body {
   overflow-x: hidden;
 }
 
+/* Logo */
+
+#logo {
+  max-width: 270px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+
+
 
 
 .btn-rounded {
@@ -10839,7 +10849,6 @@ textarea.form-control-lg {
   padding: 8px 25px 8px 15px;
   font-size: 14px; 
   width: 100px;
-  
 }
 
 .display-2 {
@@ -11744,7 +11753,7 @@ textarea.form-control-lg {
 
 #experts{
   display: block;
-  animation: fadeIn 2s ease;
+  animation: fadeIn 2.5s ease;
 }
 
 @keyframes fadeIn {
@@ -11755,7 +11764,6 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
-
 
 
 /*# sourceMappingURL=style.css.map */
