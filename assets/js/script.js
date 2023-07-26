@@ -87,7 +87,7 @@ const expertsData = [
     name: "John Doe",
     profession: "Software Engineer",
     expertise: "Python",
-    picture: "images/Experts/John Doe.jpg",
+    picture: "images/Experts/John_Doe.jpg",
   },
   {
     name: "Jane Smith",
