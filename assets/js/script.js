@@ -1,8 +1,4 @@
-history.scrollRestoration = "manual";
 
-$(document).ready(function(){
-  $(this).scrollTop(0);
-});
 
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
@@ -201,23 +197,26 @@ function showExpertsSectionBelowChatbot() {
   // Position the experts section below the chatbot section
   expertsSection.style.top = chatbotSection.offsetHeight + "px";
     // Scroll to the experts section
-    if (!isMobileDevice()) {
     const scrollOptions = {
-      top: expertsSection.offsetTop - 160, // Adjust the value to stop a bit earlier
+      top: expertsSection.offsetTop - 150, // Adjust the value to stop a bit earlier
       behavior: "smooth",
     };
     window.scrollTo(scrollOptions);
   }
-}
   
 
 
 
 // Function to handle user input when they press "Enter" or click the send button
-function handleEnterOrSendClick(event) {
-  if (event.key === "Enter" || event.type === "click") {
-    sendUserMessage();
-    // Call the function to show the experts section below the chatbot section
-    showExpertsSectionBelowChatbot();
-  }
+if (!isMobileDevice()) {
+  const scrollOptions = {
+    top: expertsSection.offsetTop - 150, // Adjust the value to stop a bit earlier
+    behavior: "smooth",
+  };
+  window.scrollTo(scrollOptions);
+}
+
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
 }
