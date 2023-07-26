@@ -10952,7 +10952,7 @@ textarea.form-control-lg {
 }
 
 .campanies {
-  padding: 0 0 5rem 0;
+  padding: 0 0 1rem 0;
 }
 .campanies__logo-box {
   max-width: 100%;
@@ -11356,17 +11356,19 @@ textarea.form-control-lg {
   border-bottom-left-radius: 5px;
   background-color: #ffffff;
   color: #212529;
+  outline: none;
 }
 
 .user-input button {
   font-size: 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%; /* Make it a circle shape */
   background-color: #6f42c1;
   color: #fff;
   text-align: center;
-  transition: 0.3s;
-  
+  transition: 0.5s;
+  width: 40px; /* Adjust the width to control the size of the circle */
+  height: 40px; /* Adjust the height to control the size of the circle */
 }
 
 
