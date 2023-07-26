@@ -22,18 +22,40 @@ function sendUserMessage() {
   userMsgDiv.className = "chat-bubble user";
   userMsgDiv.innerHTML = `<p>You: ${userInput}</p>`;
 
-  // Create chatbot response bubble
-  const chatbotResponse = getChatbotResponse(userInput);
-  const chatbotMsgDiv = document.createElement("div");
-  chatbotMsgDiv.className = "chat-bubble chatbot";
-  chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${chatbotResponse}</p>`;
-
-  // Append the new chat messages to the end of the chat-output
+  // Append the new user message to the chat output
   chatOutput.appendChild(userMsgDiv);
-  chatOutput.appendChild(chatbotMsgDiv);
 
   // Scroll to the bottom of the chat output to show the latest message
   chatOutput.scrollTop = chatOutput.scrollHeight;
+
+  // Simulate thinking (typing) effect for the chatbot response
+  setTimeout(() => {
+    const chatbotResponse = getChatbotResponse(userInput);
+    displayChatbotResponse(chatbotResponse);
+  }, 400); // Delay before the chatbot starts typing (milliseconds)
+}
+
+function displayChatbotResponse(response) {
+  const chatOutput = document.getElementById("chat-output");
+  const chatbotMsgDiv = document.createElement("div");
+  chatbotMsgDiv.className = "chat-bubble chatbot typing"; // Add the "typing" class for animation
+  chatOutput.appendChild(chatbotMsgDiv);
+
+  // Type the chatbot response text with the typing effect
+  typeChatbotResponse(response, chatbotMsgDiv);
+}
+
+function typeChatbotResponse(response, chatbotMsgDiv, index = 0) {
+  if (index < response.length) {
+    chatbotMsgDiv.textContent += response.charAt(index);
+    index++;
+    setTimeout(() => typeChatbotResponse(response, chatbotMsgDiv, index), 25); // Adjust typing speed (milliseconds)
+  } else {
+    chatbotMsgDiv.classList.remove("typing"); // Remove the "typing" class when typing is complete
+    chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${response}</p>`; // Replace the text content with the complete response
+    // Scroll to the bottom of the chat output to show the latest message
+    chatOutput.scrollTop = chatOutput.scrollHeight;
+  }
 }
 
 function handleEnterKey(event) {

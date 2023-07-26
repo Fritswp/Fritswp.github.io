@@ -11360,13 +11360,13 @@ textarea.form-control-lg {
 }
 
 .user-input button {
-  font-size: 20px;
+  font-size: 25px;
   border: none;
   border-radius: 50%; /* Make it a circle shape */
-  background-color: #6f42c1;
-  color: #fff;
+  background-color: #ffffff;
+  color: #6f42c1;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.4s;
   width: 40px; /* Adjust the width to control the size of the circle */
   height: 40px; /* Adjust the height to control the size of the circle */
 }
@@ -11421,12 +11421,12 @@ textarea.form-control-lg {
 
 .chat-bubble.user {
   color: #ffffff;
-  background-color: #007bff;
+  background-color: #6f42c1;
 }
 
 .chat-bubble.chatbot {
   color: #333;
-  background-color: #d0eaf5;
+  background-color: #f3e8fd ;
 }
 
 /* Customization */
