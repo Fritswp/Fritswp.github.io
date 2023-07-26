@@ -194,7 +194,16 @@ function showExpertsSectionBelowChatbot() {
 
   // Position the experts section below the chatbot section
   expertsSection.style.top = chatbotSection.offsetHeight + "px";
-}
+    // Scroll to the experts section
+    const scrollOptions = {
+      top: expertsSection.offsetTop - 160, // Adjust the value to stop a bit earlier
+      behavior: "smooth",
+    };
+    window.scrollTo(scrollOptions);
+  }
+  
+
+
 
 // Function to handle user input when they press "Enter" or click the send button
 function handleEnterOrSendClick(event) {
