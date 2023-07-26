@@ -147,6 +147,11 @@ p {
   margin-bottom: 1rem;
 }
 
+p1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   text-decoration: underline dotted;
@@ -11628,7 +11633,6 @@ textarea.form-control-lg {
 
 .social-links {
   padding-bottom: 1px;
-  
 }
 
 .social-links a {
@@ -11649,6 +11653,11 @@ textarea.form-control-lg {
   transform: scale(1.5);
 }
 
+@media (max-width: 767px) {
+  .social-links {
+    padding-bottom: 1rem; /* Adjust the value as per your preference */
+  }
+}
 
 
 
