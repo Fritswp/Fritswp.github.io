@@ -79,3 +79,103 @@ function getChatbotResponse(userInput) {
   const lowerCaseInput = userInput.toLowerCase();
   return responses[lowerCaseInput] || responses["default"];
 }
+
+/* experts */
+
+const expertsData = [
+  {
+    name: "John Doe",
+    profession: "Software Engineer",
+    expertise: "Python",
+    picture: "images/Experts/John Doe.jpg", 
+  },
+  {
+    name: "Jane Smith",
+    profession: "Data Scientist",
+    expertise: "Machine Learning",
+    picture: "images/Experts/Jane Smith.webp",
+  },
+  {
+    name: "Michael Johnson",
+    profession: "Baker",
+    expertise: "Pastry",
+    picture: "images/Experts/Micheal Johnson.webp",
+  },
+  {
+    name: "Emily Williams",
+    profession: "Digital Marketer",
+    expertise: "Social Media Marketing",
+    picture: "images/Experts/Emily Williams.webp",
+  },
+  {
+    name: "Robert Lee",
+    profession: "Mechanic",
+    expertise: "Automotive Repair",
+    picture: "path-to-picture-5.jpg",
+  },
+  {
+    name: "Sarah Adams",
+    profession: "Gardener",
+    expertise: "Landscape Design",
+    picture: "path-to-picture-6.jpg",
+  },
+  {
+    name: "David Thompson",
+    profession: "Musician",
+    expertise: "Piano",
+    picture: "path-to-picture-7.jpg",
+  },
+  {
+    name: "Jennifer Brown",
+    profession: "Chef",
+    expertise: "French Cuisine",
+    picture: "path-to-picture-8.jpg",
+  },
+  {
+    name: "William Green",
+    profession: "Photographer",
+    expertise: "Portrait Photography",
+    picture: "path-to-picture-9.jpg",
+  },
+  {
+    name: "Linda Martinez",
+    profession: "Artist",
+    expertise: "Oil Painting",
+    picture: "path-to-picture-10.jpg",
+  },
+  // Add more experts here as needed
+];
+
+function getRandomExperts() {
+  const numberOfExpertsToShow = 3; // You can adjust this number as needed
+
+  // Shuffle the experts data array to introduce randomness
+  const shuffledExperts = expertsData.sort(() => Math.random() - 0.5);
+
+  // Select the first `numberOfExpertsToShow` experts
+  const selectedExperts = shuffledExperts.slice(0, numberOfExpertsToShow);
+
+  // Get the container where the tiles will be placed
+  const expertsTilesContainer = document.getElementById("experts-tiles");
+
+  // Clear any existing tiles to avoid duplication on page refresh
+  expertsTilesContainer.innerHTML = '';
+
+  // Generate the HTML for each expert tile and append it to the container
+  selectedExperts.forEach((expert) => {
+    const tile = `
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-block expert-tile">
+          <img src="${expert.picture}" alt="${expert.name}" class="img-fluid expert-picture">
+          <h4 class="mt-4">${expert.name}</h4>
+          <p>${expert.profession}</p>
+          <a href="#">View Profile</a>
+        </div>
+      </div>
+    `;
+    expertsTilesContainer.innerHTML += tile;
+  });
+}
+
+// Call the function to generate random experts when the page loads
+window.addEventListener("load", getRandomExperts);
