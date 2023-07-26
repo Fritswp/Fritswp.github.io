@@ -71,6 +71,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 .btn-rounded {
   float: right;
 }
@@ -10824,6 +10826,17 @@ textarea.form-control-lg {
 }
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.login-button {
+  /* Center the text horizontally and vertically within the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* You can adjust the padding and other styles as needed */
+  /* For example, reduce left and right padding to center the text more */
+  padding: 0.8375rem 2rem;
 }
 
 .display-2 {

@@ -49,7 +49,7 @@ function typeChatbotResponse(response, chatbotMsgDiv, index = 0) {
   if (index < response.length) {
     chatbotMsgDiv.textContent += response.charAt(index);
     index++;
-    setTimeout(() => typeChatbotResponse(response, chatbotMsgDiv, index), 25); // Adjust typing speed (milliseconds)
+    setTimeout(() => typeChatbotResponse(response, chatbotMsgDiv, index), 22); // Adjust typing speed (milliseconds)
   } else {
     chatbotMsgDiv.classList.remove("typing"); // Remove the "typing" class when typing is complete
     chatbotMsgDiv.innerHTML = `<p>TioAssist.io: ${response}</p>`; // Replace the text content with the complete response
