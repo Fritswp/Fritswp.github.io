@@ -1,3 +1,9 @@
+window.addEventListener('beforeunload', function() {
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
+});
+
+
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
 
