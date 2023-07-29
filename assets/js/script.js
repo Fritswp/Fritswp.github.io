@@ -1,3 +1,5 @@
+
+
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
 let hasScrolledToExperts = false;
@@ -82,6 +84,7 @@ document.getElementById("loginButtonNav").addEventListener("click", function () 
   }
 });
 
+
 // Event listener to close the login box when clicking outside of it
 document.addEventListener("click", function (event) {
   const loginBox = document.getElementById("loginBox");
@@ -90,6 +93,15 @@ document.addEventListener("click", function (event) {
   // Check if the click target is outside the login box and login button
   if (event.target !== loginBox && event.target !== loginButtonNav) {
     loginBox.style.display = "none";
+  }
+
+  // Check if the click target is outside the navbar and close it
+  const navbar = document.getElementById("navbarNav");
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  
+  // Check if the click target is outside the navbar and navbar toggler button
+  if (event.target !== navbar && event.target !== navbarToggler) {
+    navbar.classList.remove("show"); // This will hide the navbar on clicking outside
   }
 });
 
@@ -298,3 +310,5 @@ function showExpertsSectionBelowChatbot() {
   $(window).on('beforeunload', function(){
         $(window).scrollTop(0);
   });
+
+  
