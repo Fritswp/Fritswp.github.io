@@ -64,6 +64,11 @@ document.getElementById("tryMeButton").addEventListener("click", function () {
   window.scrollTo(scrollOptions);
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+                           /////...BEGIN OF LOGIN.../////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 // New event listener for the "Login" button click
 document.getElementById("loginButtonNav").addEventListener("click", function () {
   // Get the login box element
@@ -76,6 +81,21 @@ document.getElementById("loginButtonNav").addEventListener("click", function () 
     loginBox.style.display = "block";
   }
 });
+
+// Event listener to close the login box when clicking outside of it
+document.addEventListener("click", function (event) {
+  const loginBox = document.getElementById("loginBox");
+  const loginButtonNav = document.getElementById("loginButtonNav");
+
+  // Check if the click target is outside the login box and login button
+  if (event.target !== loginBox && event.target !== loginButtonNav) {
+    loginBox.style.display = "none";
+  }
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+                           /////...END OF LOGIN.../////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Existing event listener for the "Enter" key press
 document.getElementById("user-input").addEventListener("keydown", handleEnterKey);
