@@ -38,12 +38,90 @@
           <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
           </li>
         </ul>
-        <button type="button" id="loginButton" class="rounded-pill btn-rounded login-button">
-          Login     
+        <button type="button" id="loginButtonNav" class="rounded-pill btn-rounded login-button">
+          Login
         </button>
-      </div>
-    </div>
-  </nav>
+  </div>
+</nav>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 1.5 - THE LOGIN BOX
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<div class="login-box" id="loginBox">
+<!-- Upper section with heading and subheading -->
+<div class="log-in-text">
+  <div class="log-in-text-opening">
+      <!-- Main heading -->
+      <h7 class="log-in-text-opening">Log in or sign up in seconds</h7>
+  </div>
+  <!-- Subheading -->
+  <h8 class="log-in-text-closing">Use your email or another service to continue with TioAssist.io</h8>
+</div>
+
+<!-- Social media buttons section -->
+<div class="social-login">
+
+  <!-- Google sign-in button -->
+  <button class="social-button google" type="button">
+      <span class="text">Continue with Google</span>
+      <span class="icon">
+          <!-- Google icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24">
+              <path fill="#4285f4" d="M386 400c45-42 65-112 53-179H260v74h102c-4 24-18 44-38 57z"></path>
+              <path fill="#34a853" d="M90 341a192 192 0 0 0 296 59l-62-48c-53 35-141 22-171-60z"></path>
+              <path fill="#fbbc02" d="M153 292c-8-25-8-48 0-73l-63-49c-23 46-30 111 0 171z"></path>
+              <path fill="#ea4335" d="M153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55z"></path>
+          </svg>
+      </span>
+  </button>
+
+  <!-- Facebook sign-in button -->
+  <button class="social-button facebook" type="button">
+      <span class="icon">
+          <!-- Facebook icon -->
+          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.5 12.058c0-5.28-4.253-9.558-9.5-9.558s-9.5 4.279-9.5 9.558c0 4.771 3.473 8.725 8.016 9.442v-6.68H8.104v-2.762h2.412V9.952c0-2.395 1.417-3.718 3.588-3.718 1.04 0 2.126.186 2.126.186v2.352h-1.198c-1.18 0-1.548.738-1.548 1.494v1.792h2.635l-.421 2.763h-2.214V21.5c4.543-.717 8.016-4.67 8.016-9.442z" fill="#3b5998"></path>
+          </svg>
+      </span>
+      <span class="text">Continue with Facebook</span>
+  </button>
+
+  <!-- Email sign-in button -->
+  <button class="social-button" type="button">
+      <span class="icon">
+          <!-- Email icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                  d="M20.37 5.03A2 2 0 0 1 22 7v10a2 2 0 0 1-1.96 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h16.1H4zm.13 2.07-4.53 5.31 4.53 4.63a.5.5 0 0 0 0-.04V7.1zm-17-.14a.5.5 0 0 0 0 .04v10a.5.5 0 0 0 0 .04l4.59-4.7L3.5 6.97zm5.57 6.53-3.92 4 13.7.01L15 13.56a4 4 0 0 1-5.93-.07zm9.88-6.99H5l5.07 5.96a2.5 2.5 0 0 0 3.81 0l5.07-5.96z">
+              </path>
+          </svg>
+      </span>
+      <span class="text">Continue with Email</span>
+  </button>
+
+  <!-- "Continue sign up" button -->
+  <button class="signup-button" type="button">Continue another way</button>
+</div>
+
+
+  <div class="terms">
+    <h9>By continuing, you agree to our <a href="URL_TO_TERMS_OF_USE" target="_blank" rel="noopener">Terms of Use</a>. Read our <a href="URL_TO_PRIVACY_POLICY" target="_blank" rel="noopener">Privacy Policy</a>.</h9>
+  </div>
+<!-- another way button -->
+  <button class="another-way-button" type="button">
+    <span class="icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 18.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5h6.5c.275 0 .5.225.5.5v13.5H4Zm8.5 1.497V20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6.5c1.102 0 2 .895 2 2v3.997h2L20 9c1.105 0 2 .892 2 2v7l-1.5-.001V11c0-.278-.222-.5-.5-.5l-3.126-.001-4.374-.002v8l7.5.003a.5.5 0 0 0 .5-.5H22a2 2 0 0 1-2 2l-7.5-.003ZM5 7.497h4.5v-1.5H5v1.5Zm0 3h4.5v-1.5H5v1.5Zm4.5 3H5v-1.5h4.5v1.5Zm-4.5 3h4.5v-1.5H5v1.5Zm11-3h-2v-1.5h2v1.5Zm0 3h-2v-1.5h2v1.5Zm3-3h-2v-1.5h2v1.5Zm0 3h-2v-1.5h2v1.5Z"
+                fill="currentColor"></path>
+        </svg>
+    </span>
+    <span class="text">
+        Sign up with your work email
+    </span>
+  </button>
+  </div>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
                             START SECTION 2 - THE INTRO SECTION  
@@ -418,38 +496,39 @@
     <div class="row mt-5">
       <div class="col-md-12">
         <div class="accordion" id="accordionExample">
-          <!-- ACCORDION ITEM 1 -->
+             <!-- ACCORDION ITEM 1 -->
           <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 What are the main features?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>Our platform offers two key features to ensure you get the best answers to your questions:</p>
 
                 <p><strong>Generative AI Responses:</strong> Chat with our advanced Generative AI to receive instant answers to your questions. Our AI has been trained on a vast range of data and is continuously learning to provide accurate and relevant information.</p> 
                 
                 <p><strong>Access to Expertise:</strong> If you find yourself unsatisfied with the AI's response or need more in-depth assistance, you have the option to reach out to our community of vetted experts. These experts are experienced professionals in various fields and are ready to lend a hand to help you further.</p> 
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 2 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                How are all the experts vetted to ensure I get the answer I need?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>We take great care in selecting and vetting our experts to maintain the highest standards of knowledge and professionalism. Each expert undergoes a rigorous evaluation process, including a review of their qualifications, experience, and expertise in their respective fields. Additionally, we conduct interviews and reference checks to verify their background and track record.</p>
-                <p>Rest assured that when you connect with an expert on our platform, you are getting assistance from a reliable and knowledgeable individual who is dedicated to helping you find the right answers to your questions.
                 </p>
               </div>
             </div>
           </div>
+                 <!-- ACCORDION ITEM 2 -->
+                 <div class="accordion-item shadow mb-3">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How are all the experts vetted to ensure I get the answer I need?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>We take great care in selecting and vetting our experts to maintain the highest standards of knowledge and professionalism. Each expert undergoes a rigorous evaluation process, including a review of their qualifications, experience, and expertise in their respective fields. Additionally, we conduct interviews and reference checks to verify their background and track record.</p>
+                      <p>Rest assured that when you connect with an expert on our platform, you are getting assistance from a reliable and knowledgeable individual who is dedicated to helping you find the right answers to your questions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
              <!-- ACCORDION ITEM 3 -->
           <div class="accordion-item shadow mb-3">
             <h2 class="accordion-header" id="headingThree">
@@ -744,6 +823,7 @@
     </div>
 
   </footer>
+
 
      <script src="assets/js/bootstrap.bundle.min.js"></script>
      <script src="assets\js\script.js"></script>
