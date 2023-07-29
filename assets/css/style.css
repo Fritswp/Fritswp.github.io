@@ -1,3 +1,4 @@
+@@ -1,11769 +1,11999 @@
 @charset "UTF-8";
 @keyframes pulse-border {
   0% {
@@ -443,6 +444,8 @@ legend + * {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
+
+
 
 /* rtl:raw:
 [type="tel"],
@@ -4411,6 +4414,8 @@ textarea.form-control-lg {
   }
 }
 
+
+
 .accordion-button {
   position: relative;
   display: flex;
@@ -4429,6 +4434,10 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
+  }
+
+  .accordion-button:not(.collapsed):first-of-type::after {
+    background-image: none;
   }
 }
 .accordion-button:not(.collapsed) {
@@ -4519,6 +4528,8 @@ textarea.form-control-lg {
 .accordion-flush .accordion-item .accordion-button {
   border-radius: 0;
 }
+
+
 
 .breadcrumb {
   display: flex;
@@ -11667,6 +11678,7 @@ textarea.form-control-lg {
 
 .social-links {
   padding-bottom: 1px;
+  padding-bottom: 1rem;
 }
 
 .social-links a {
@@ -11764,6 +11776,226 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
+
+
+/* Login-Box */
+/* CSS styles for the login box */
+.login-box {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  max-width: 400px;
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+
+  /* CSS animation for fading in the login box */
+  animation: fadeIn 0.4s ease-in-out forwards; /* Use "forwards" to retain the final animation state */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Add a high z-index to ensure the box appears above other elements */
+  opacity: 0; /* Set initial opacity to 0 for the fade animation */
+}
+
+/* CSS animation for fading in the login box */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+      /* CSS styles for the page headings */
+h7 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; /* Align the text to the right */
+}
+
+h8 {
+  color: #888888; /* Grey color */
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: normal; /* Thinner font weight */
+  text-align: left; /* Align the text to the right */
+  line-height: 1.5;
+}
+
+h9 {
+  color: #888888; /* Grey color */
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: normal; /* Thinner font weight */
+  text-align: left; /* Align the text to the right */
+  line-height: 1.5;
+}
+
+h8 {
+  color: #000000;
+  font-size: 16px;
+  padding: 0;
+}
+
+.social-login {
+  margin-top: 20px;
+
+}
+
+/* CSS styles for paragraph text */
+
+.signup-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #ffffff; /* Light grey background color */
+  display: flex; /* Use flexbox to control the layout of children elements */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+.signup-button:hover {
+  background-color: #F2F3F5; /* Hover color - Slightly darker grey background color */
+}
+.signup-button-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+}
+
+.log-in-text-opening {
+  margin-bottom: 10px; /* Increase the space between the opening login text and the closing login text */
+}
+
+
+
+
+
+/* CSS styles for the social buttons and email button */
+.social-button,
+.email-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #F2F3F5; /* Light grey background color */
+  display: flex; /* Use flexbox to control the layout of children elements */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.social-button .text {
+  flex: 1; /* Allow the text to take up remaining space */
+  text-align: center; /* Center the text horizontally */
+}
+
+.social-button .icon {
+  order: -1;
+  margin-left: 10px; /* Add some spacing between the text and the icon */
+}
+
+.email-button .text {
+  padding: 15px;
+  flex: 1; /* Allow the text to take up remaining space */
+  text-align: center; /* Center the text horizontally */
+}
+
+  .another-way-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    height: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #ffffff; /* Original background color - Light grey background color */
+    display: flex;
+    align-items: left; /* Align items to the start (top) of the flex container */
+    justify-content: left; /* Align items to the start (left) of the flex container */
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.another-way-button .icon {
+margin-right: 10px;
+}
+
+.another-way-button .text {
+padding-left: 10px; /* Adjust the value as per your desired spacing */
+}
+
+/* CSS styles for the social buttons, email button, and signup button on hover */
+.social-button:hover,
+.email-button:hover {
+  background-color: #E1E4E7; /* Slightly darker grey background color on hover */
+}
+
+/* Additional CSS for smaller screen sizes */
+@media screen and (max-width: 480px) {
+  .login-box {
+      padding: 20px;
+  }
+
+  .h7 {
+      font-size: 22px;
+  }
+}
+
+/* Additional CSS for smaller screen sizes */
+@media screen and (max-width: 480px) {
+  .login-box {
+    width: 90%; /* Adjust the width for mobile screens */
+    height: auto; /* Let the height adjust automatically based on content */
+    padding: 20px;
+  }
+
+  .h7 {
+    font-size: 12px;
+    line-height: .5; /* Reduced line spacing */
+  }
+
+ .h8,
+  .h9 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    line-height: 1.5; /* Reduced line spacing */
+  }
+
+  .social-login,
+  .signup-button-container {
+    flex-direction: column; /* Stack the buttons vertically on smaller screens */
+  }
+
+  .signup-button,
+  .social-button,
+  .email-button,
+  .another-way-button {
+    margin: 10px 0; /* Add some spacing between the buttons */
+    height: 40px; /* Set a specific height for the buttons */
+    font-size: 16px; /* If you want to reduce the font size of the button text for smaller screens */
+  }
+}
+
+
 
 
 /*# sourceMappingURL=style.css.map */
