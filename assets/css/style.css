@@ -445,8 +445,6 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-
-
 /* rtl:raw:
 [type="tel"],
 [type="url"],
@@ -4414,8 +4412,6 @@ textarea.form-control-lg {
   }
 }
 
-
-
 .accordion-button {
   position: relative;
   display: flex;
@@ -4434,10 +4430,6 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
-  }
-
-  .accordion-button:not(.collapsed):first-of-type::after {
-    background-image: none;
   }
 }
 .accordion-button:not(.collapsed) {
@@ -4528,8 +4520,6 @@ textarea.form-control-lg {
 .accordion-flush .accordion-item .accordion-button {
   border-radius: 0;
 }
-
-
 
 .breadcrumb {
   display: flex;
@@ -11678,7 +11668,10 @@ textarea.form-control-lg {
 
 .social-links {
   padding-bottom: 1px;
+<<<<<<< HEAD
   padding-bottom: 1rem;
+=======
+>>>>>>> parent of 5006685 (Stable Pre-Greek)
 }
 
 .social-links a {
@@ -11778,6 +11771,7 @@ textarea.form-control-lg {
 }
 
 
+<<<<<<< HEAD
 /* Login-Box */
 /* CSS styles for the login box */
 .login-box {
@@ -11999,3 +11993,6 @@ padding-left: 10px; /* Adjust the value as per your desired spacing */
 
 
 /*# sourceMappingURL=style.css.map */
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> parent of 5006685 (Stable Pre-Greek)

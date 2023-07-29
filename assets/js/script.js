@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @@ -1,3 +1,29 @@
 //login box//
 const loginButton = document.getElementById('loginButtonNav');
@@ -25,6 +26,8 @@ window.addEventListener('click', (event) => {
   }
 });
 
+=======
+>>>>>>> parent of 5006685 (Stable Pre-Greek)
 // Add this global variable to track whether the first user message is sent
 let isFirstUserMessageSent = false;
 let hasScrolledToExperts = false;
@@ -32,6 +35,7 @@ let hasScrolledToExperts = false;
 
   $(window).on('beforeunload', function(){
         $(window).scrollTop(0);
+<<<<<<< HEAD
   });
   });
 
@@ -162,3 +166,6 @@ function getChatbotResponse(userInput) {
 }
 
 
+=======
+  });
+>>>>>>> parent of 5006685 (Stable Pre-Greek)
