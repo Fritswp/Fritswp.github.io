@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const tryMeButton = document.getElementById("tryMeButton");
+  tryMeButton.addEventListener("click", function () {
+    const portSection = document.getElementById("port");
+    if (portSection) {
+      const offsetTop = portSection.getBoundingClientRect().top;
+      const navbarHeight = 0; // Adjust this value based on your fixed navbar height, if any
+      const paddingTop = 50; // Increase the paddingTop value to add more space
+      const scrollPosition = offsetTop + window.scrollY - navbarHeight - paddingTop;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
 //login box//
 const loginButton = document.getElementById('loginButtonNav');
 const loginBox = document.getElementById('loginBox');
