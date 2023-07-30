@@ -11554,6 +11554,7 @@ textarea.form-control-lg {
   padding: 30px 20px 0; /* Adjust the padding as needed */
   max-width: 500px;
   transition: all 0.5s ease-in-out 0s;
+  padding-bottom: 20px; 
 }
 
 /* Add the image container and style the images */
@@ -11570,7 +11571,7 @@ textarea.form-control-lg {
 
 @media (max-width: 991px) {
   #get-started .feature-block {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -11587,6 +11588,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
 }
 
+
 #get-started .feature-block a {
   color: #505050;
   font-size: 12px;
@@ -11594,7 +11596,10 @@ textarea.form-control-lg {
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.3s;
+  padding-bottom: 10px;
+  display: block;
 }
+
 
 #get-started .feature-block a:hover {
   color: #6f42c1;
