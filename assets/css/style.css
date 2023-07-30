@@ -11877,11 +11877,9 @@ h8 {
   margin-bottom: 10px; /* Increase the space between the opening login text and the closing login text */
 }
 
-
-
-
-
-/* CSS styles for the social buttons and email button */
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+                           STYLE FOR THE LOGIN BOX AND BUTTONS
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .social-button,
 .email-button {
   padding: 10px;
@@ -11994,6 +11992,14 @@ padding-left: 10px; /* Adjust the value as per your desired spacing */
 }
 
 
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+                            RED LINING TO FIND HORIZONTAL SCROLL
 
+                            .slide-content .scroller {
+  width: 1024px;
+}
+* {
+  outline: 1px solid #f00 !important;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*# sourceMappingURL=style.css.map */
