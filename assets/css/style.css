@@ -11552,7 +11552,7 @@ textarea.form-control-lg {
 #get-started .feature-block {
   background: #fff none repeat scroll 0 0;
   padding: 30px 20px 0; /* Adjust the padding as needed */
-  max-width: 500px;
+  max-width: 300px;
   transition: all 0.5s ease-in-out 0s;
   padding-bottom: 20px; 
 }
@@ -11777,6 +11777,26 @@ textarea.form-control-lg {
   animation: fadeIn 2.5s ease;
 }
 
+.star-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  margin-top: 10px; /* Adjust the spacing from the "View Profile" text */
+  margin-bottom: 10px
+  
+}
+
+.star-rating i {
+  color: #6f42c1; /* Set the color of the stars */
+  font-size: 1rem; /* Adjust the size of the stars */
+  margin: 2px; /* Remove margin */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  line-height: 1; /* Adjust the line height to remove extra spacing */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -11785,6 +11805,8 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
+
+
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////
                            STYLE FOR THE LOGIN BOX AND BUTTONS

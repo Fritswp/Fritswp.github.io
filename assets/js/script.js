@@ -100,7 +100,7 @@ document.addEventListener("click", function (event) {
 });
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-                           /////...END OF LOGIN.../////
+                           /////...EXPERT Section.../////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Existing event listener for the "Enter" key press
@@ -179,60 +179,71 @@ const expertsData = [
     profession: "Software Engineer",
     expertise: "Python",
     picture: "images/Experts/John Doe.webp",
+    rating: 4,
   },
   {
     name: "Jane Smith",
     profession: "Data Scientist",
     expertise: "Machine Learning",
     picture: "images/Experts/Jane Smith.webp",
+    rating: 4,
   },
   {
     name: "Michael Johnson",
     profession: "Baker",
     expertise: "Pastry",
     picture: "images/Experts/Michael Johnson.webp",
+    rating: 4.5,
   },
   {
     name: "Emily Williams",
     profession: "Digital Marketer",
     expertise: "Social Media Marketing",
     picture: "images/Experts/Emily Williams.webp",
+    rating: 3,
   },
   {
     name: "Robert Lee",
     profession: "Mechanic",
     expertise: "Automotive Repair",
     picture: "images/Experts/Robert Lee.webp",
+    rating: 3.5,
   },
   {
     name: "Sarah Adams",
     profession: "Gardener",
     expertise: "Landscape Design",
     picture: "images/Experts/Sarah Adams.webp",
+    rating: 5,
   },
   {
     name: "David Thompson",
     profession: "Musician",
     expertise: "Piano",
     picture: "images/Experts/David Thompson.webp",
+    rating: 4,
   },
   {
     name: "Jennifer Brown",
     profession: "Chef",
     expertise: "French Cuisine",
     picture: "images/Experts/Jennifer Brown.webp",
+    rating: 4,
   },
   {
     name: "William Green",
     profession: "Photographer",
     expertise: "Portrait Photography",
     picture: "images/Experts/William Green.webp",
+    rating: 4.5,
   },
   {
     name: "Linda Martinez",
     profession: "Artist",
     expertise: "Oil Painting",
     picture: "images/Experts/Linda Martinez.webp",
+    rating: 3.5,
+    
   },
   // Add more experts here as needed
 ];
@@ -253,6 +264,7 @@ function getRandomExperts() {
 
   // Generate the HTML for each expert tile and append it to the container
   selectedExperts.forEach((expert) => {
+    const rating = expert.rating ? getStarRatingHTML(expert.rating) : '';
     const tile = `
       <div class="col-md-6 col-lg-4">
         <div class="feature-block expert-tile">
@@ -261,12 +273,39 @@ function getRandomExperts() {
           <p>${expert.profession}</p>
           <p>Expertise: ${expert.expertise}</p>
           <a href="#">View Profile <i class="fas fa-comment" aria-hidden="true"></i></a>
+          ${rating}
         </div>
       </div>
     `;
     expertsTilesContainer.innerHTML += tile;
   });
 }
+
+  ///////////////////////// STAR RATING /////////////////////////////
+  function getStarRatingHTML(rating) {
+    const roundedRating = Math.round(rating * 2) / 2; 
+    const fullStars = Math.floor(roundedRating); 
+    const hasHalfStar = (roundedRating % 1 !== 0); 
+  
+    let starHTML = '';
+    for (let i = 0; i < fullStars; i++) {
+      starHTML += '<i class="fas fa-star" style="color: #color: #6f42c1;"></i>'; 
+    }
+  
+    if (hasHalfStar) {
+      starHTML += '<i class="fas fa-star-half-alt" style="color: #color: #6f42c1;"></i>'; 
+    }
+  
+    // Add remaining empty stars
+    for (let i = 0; i < (5 - Math.ceil(roundedRating)); i++) {
+      starHTML += '<i class="far fa-star" style="color: #e3e3e3;"></i>';
+    }
+  
+    return `<div class="star-rating">${starHTML}</div>`;
+  }
+  ///////////////////////// END START RATING /////////////////////////////
+
+
 
 // Call the function to generate random experts when the page loads
 window.addEventListener("load", getRandomExperts);
