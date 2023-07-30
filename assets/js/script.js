@@ -49,23 +49,17 @@ function handleEnterKey(event) {
   }
 }
 
-// Add a new event listener for the chatbox click
-document.getElementById("user-input").addEventListener("click", function () {
-  // Set scrollToExperts to false when the user clicks on the chatbox
-  handleEnterKey({ key: "Click" });
-});
 
-// New code for "Try Me" button click event
+
 document.getElementById("tryMeButton").addEventListener("click", function () {
-  // Scroll to the "port" section
-  const portSection = document.getElementById("port");
+  // Scroll to the "chatbox" section instead of "port" section
+  const chatboxSection = document.querySelector(".chatbox");
   const scrollOptions = {
-    top: portSection.offsetTop - 100, // Adjust the value to get the desired position
+    top: chatboxSection.offsetTop - 100, // Adjust the value to get the desired position
     behavior: "smooth",
   };
   window.scrollTo(scrollOptions);
 });
-
 /////////////////////////////////////////////////////////////////////////////////////////////////
                            /////...BEGIN OF LOGIN.../////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
