@@ -11249,15 +11249,6 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
-.chat-container {
-  max-width: 800px;
-  margin: 50px auto;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  box-sizing: border-box;
-}
 
 .user-input {
   display: flex;
@@ -11346,24 +11337,10 @@ textarea.form-control-lg {
 
 /* Customization */
 
-.chat-container {
-  background-color: #ffffff;
-  border-color: #d0eaf5;
-}
-
 .chat-output {
   background-color: #ffffff;
   border-color: #d0eaf5;
 }
-
-/* Media Query for larger devices */
-@media (max-width: 768px) {
-  .chat-container {
-    max-width: 100%;
-    /* Set the width of the chatbox to 100% */
-  }
-}
-
 
 
 /* TIO - Penguin image */
