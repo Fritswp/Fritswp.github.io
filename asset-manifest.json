@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc17109d.css",
-    "main.js": "/static/js/main.277ebb2e.js",
+    "main.css": "/static/css/main.43cdbd66.css",
+    "main.js": "/static/js/main.87fa9bf3.js",
     "static/js/330.1a5fb0a8.chunk.js": "/static/js/330.1a5fb0a8.chunk.js",
     "static/js/315.9ecd4362.chunk.js": "/static/js/315.9ecd4362.chunk.js",
-    "static/js/56.5f93bea9.chunk.js": "/static/js/56.5f93bea9.chunk.js",
+    "static/js/56.8a754fdd.chunk.js": "/static/js/56.8a754fdd.chunk.js",
     "static/js/398.09bcc54f.chunk.js": "/static/js/398.09bcc54f.chunk.js",
     "static/js/462.4b4ee9ab.chunk.js": "/static/js/462.4b4ee9ab.chunk.js",
     "static/js/416.5184a08f.chunk.js": "/static/js/416.5184a08f.chunk.js",
@@ -40,11 +40,11 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/index.html",
-    "main.cc17109d.css.map": "/static/css/main.cc17109d.css.map",
-    "main.277ebb2e.js.map": "/static/js/main.277ebb2e.js.map",
+    "main.43cdbd66.css.map": "/static/css/main.43cdbd66.css.map",
+    "main.87fa9bf3.js.map": "/static/js/main.87fa9bf3.js.map",
     "330.1a5fb0a8.chunk.js.map": "/static/js/330.1a5fb0a8.chunk.js.map",
     "315.9ecd4362.chunk.js.map": "/static/js/315.9ecd4362.chunk.js.map",
-    "56.5f93bea9.chunk.js.map": "/static/js/56.5f93bea9.chunk.js.map",
+    "56.8a754fdd.chunk.js.map": "/static/js/56.8a754fdd.chunk.js.map",
     "398.09bcc54f.chunk.js.map": "/static/js/398.09bcc54f.chunk.js.map",
     "462.4b4ee9ab.chunk.js.map": "/static/js/462.4b4ee9ab.chunk.js.map",
     "416.5184a08f.chunk.js.map": "/static/js/416.5184a08f.chunk.js.map",
@@ -73,7 +73,7 @@
     "104.d9d60dd4.chunk.js.map": "/static/js/104.d9d60dd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc17109d.css",
-    "static/js/main.277ebb2e.js"
+    "static/css/main.43cdbd66.css",
+    "static/js/main.87fa9bf3.js"
   ]
 }
