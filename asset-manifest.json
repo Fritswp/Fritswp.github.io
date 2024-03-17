@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab3f80da.css",
-    "main.js": "/static/js/main.c1de425a.js",
+    "main.css": "/static/css/main.3e0e8e73.css",
+    "main.js": "/static/js/main.12603b2b.js",
     "static/js/330.1a5fb0a8.chunk.js": "/static/js/330.1a5fb0a8.chunk.js",
     "static/js/315.13dd9105.chunk.js": "/static/js/315.13dd9105.chunk.js",
-    "static/js/980.68d3fbdc.chunk.js": "/static/js/980.68d3fbdc.chunk.js",
+    "static/js/980.70543217.chunk.js": "/static/js/980.70543217.chunk.js",
     "static/js/398.09bcc54f.chunk.js": "/static/js/398.09bcc54f.chunk.js",
     "static/js/462.ed193cdd.chunk.js": "/static/js/462.ed193cdd.chunk.js",
     "static/js/416.e432080c.chunk.js": "/static/js/416.e432080c.chunk.js",
@@ -40,11 +40,11 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/index.html",
-    "main.ab3f80da.css.map": "/static/css/main.ab3f80da.css.map",
-    "main.c1de425a.js.map": "/static/js/main.c1de425a.js.map",
+    "main.3e0e8e73.css.map": "/static/css/main.3e0e8e73.css.map",
+    "main.12603b2b.js.map": "/static/js/main.12603b2b.js.map",
     "330.1a5fb0a8.chunk.js.map": "/static/js/330.1a5fb0a8.chunk.js.map",
     "315.13dd9105.chunk.js.map": "/static/js/315.13dd9105.chunk.js.map",
-    "980.68d3fbdc.chunk.js.map": "/static/js/980.68d3fbdc.chunk.js.map",
+    "980.70543217.chunk.js.map": "/static/js/980.70543217.chunk.js.map",
     "398.09bcc54f.chunk.js.map": "/static/js/398.09bcc54f.chunk.js.map",
     "462.ed193cdd.chunk.js.map": "/static/js/462.ed193cdd.chunk.js.map",
     "416.e432080c.chunk.js.map": "/static/js/416.e432080c.chunk.js.map",
@@ -73,7 +73,7 @@
     "104.5e82d580.chunk.js.map": "/static/js/104.5e82d580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab3f80da.css",
-    "static/js/main.c1de425a.js"
+    "static/css/main.3e0e8e73.css",
+    "static/js/main.12603b2b.js"
   ]
 }
